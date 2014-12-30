@@ -23,7 +23,7 @@ namespace RA2_YR_Config
         /// Der Haupteinstiegspunkt für die Anwendung.
         /// </summary>
         [STAThread]
-        static void Main()
+        static void Main(string[] args)
         {
             Application.SetCompatibleTextRenderingDefault(false);
             AppDomain.CurrentDomain.UnhandledException += new UnhandledExceptionEventHandler(CurrentDomain_UnhandledException);
@@ -31,6 +31,13 @@ namespace RA2_YR_Config
             Thread.CurrentThread.CurrentCulture = new CultureInfo("en-US");
             Thread.CurrentThread.CurrentUICulture = new CultureInfo("en-US");
 
+            bool skipUpdateParamExists = false, firstStart = false, isAdminParamExists = false;
+
+            foreach (string arg in args)
+            {
+                if (arg == SkipUpdateParam) skipUpdateParamExists = true;
+
+            }
             if (!GotWritePermissions())
             {
                 if (MessageBox.Show(PermissionError, AccessDeniedCaption, MessageBoxButtons.YesNo) == DialogResult.Yes)
@@ -46,6 +53,8 @@ namespace RA2_YR_Config
                 }
                 return;
             }
+
+            if (!skipUpdateParamExists && Updater.GetUpdates()) return;
 
             Application.Run(new MainForm());
         }
