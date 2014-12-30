@@ -17,6 +17,7 @@ namespace RA2_YR_Config
         public static string AccessDeniedCaption = "Error: Access denied";
         public static string WritePermissionTestFile = path + "WritePermissionTestFile.txt";
         public static string ErrorCaption = "Error";
+        public static string SkipUpdateParam = "-NOUPDATE";
 
         /// <summary>
         /// Der Haupteinstiegspunkt für die Anwendung.

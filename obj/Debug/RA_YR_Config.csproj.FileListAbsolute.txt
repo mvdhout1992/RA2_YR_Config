@@ -16,3 +16,4 @@ C:\Users\maikel\Desktop\RA_YR_Config\obj\Debug\RA2_YR_Config.Properties.Resource
 C:\Users\maikel\Desktop\RA_YR_Config\obj\Debug\RA_YR_Config.csproj.GenerateResource.Cache
 C:\Users\maikel\Desktop\RA_YR_Config\obj\Debug\RA2_YR_Config.exe
 C:\Users\maikel\Desktop\RA_YR_Config\obj\Debug\RA2_YR_Config.pdb
+C:\Users\maikel\Desktop\RA_YR_Config\obj\Debug\RA2_YR_Config.UpdaterForm.resources
