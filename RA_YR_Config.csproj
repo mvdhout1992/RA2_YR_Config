@@ -108,7 +108,10 @@
     </Compile>
     <None Include="Resources\aqrit.cfg" />
     <None Include="Resources\dune2000.ini" />
+    <None Include="Resources\keyboard.ini" />
+    <None Include="Resources\keyboardmd.ini" />
     <None Include="Resources\ra2.ini" />
+    <None Include="Resources\ra21.ini" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

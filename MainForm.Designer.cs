@@ -36,6 +36,28 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.RA2OptionsTab = new System.Windows.Forms.TabPage();
+            this.lblDetailLevelRA2 = new System.Windows.Forms.Label();
+            this.trackBar1 = new System.Windows.Forms.TrackBar();
+            this.chbVideoBackBufferRA2 = new System.Windows.Forms.CheckBox();
+            this.chbAllowVRAMSidebarRA2 = new System.Windows.Forms.CheckBox();
+            this.trbrVoiceVolume = new System.Windows.Forms.TrackBar();
+            this.lblVoiceVolumeRA2 = new System.Windows.Forms.Label();
+            this.chbShuffleMusic = new System.Windows.Forms.CheckBox();
+            this.chbRepeatMusicRA2 = new System.Windows.Forms.CheckBox();
+            this.chbUseGraphicsPatchRA2 = new System.Windows.Forms.CheckBox();
+            this.chbWindowedModeRA2 = new System.Windows.Forms.CheckBox();
+            this.lblScreenResolutionRA2 = new System.Windows.Forms.Label();
+            this.cmbResolutionRA2 = new System.Windows.Forms.ComboBox();
+            this.chbShowHiddenObjectsRA2 = new System.Windows.Forms.CheckBox();
+            this.chbEnableNoCDRA2 = new System.Windows.Forms.CheckBox();
+            this.lblScrollRateRA2 = new System.Windows.Forms.Label();
+            this.chbShowTargetLinesRA2 = new System.Windows.Forms.CheckBox();
+            this.trbrScrollRateRA2 = new System.Windows.Forms.TrackBar();
+            this.trbrMusicVolumeRA2 = new System.Windows.Forms.TrackBar();
+            this.lblMusicVolumeRA2 = new System.Windows.Forms.Label();
+            this.chbShowToolTipsRA2 = new System.Windows.Forms.CheckBox();
+            this.lblAudioVolumeRA2 = new System.Windows.Forms.Label();
+            this.trbtrAudioVolumeRA2 = new System.Windows.Forms.TrackBar();
             this.RA2HotkeyTab = new System.Windows.Forms.TabPage();
             this.HotkeyEditorDataGridRA2 = new System.Windows.Forms.DataGridView();
             this.Function = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -52,44 +74,27 @@
             this.ResolutionComboBox = new System.Windows.Forms.ComboBox();
             this.BitsPerPixelLabel = new System.Windows.Forms.Label();
             this.BitsPerPixelComboBox = new System.Windows.Forms.ComboBox();
+            this.YRHotkeysTab = new System.Windows.Forms.TabPage();
+            this.HotkeyEditorDataGridYR = new System.Windows.Forms.DataGridView();
+            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.OkButton = new System.Windows.Forms.Button();
             this.CancelButton = new System.Windows.Forms.Button();
             this.ResetButton = new System.Windows.Forms.Button();
             this.ApplyButton = new System.Windows.Forms.Button();
-            this.YRHotkeysTab = new System.Windows.Forms.TabPage();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.trbrScrollRateRA2 = new System.Windows.Forms.TrackBar();
-            this.lblScrollRateRA2 = new System.Windows.Forms.Label();
-            this.trbtrAudioVolumeRA2 = new System.Windows.Forms.TrackBar();
-            this.lblAudioVolumeRA2 = new System.Windows.Forms.Label();
-            this.trbrMusicVolumeRA2 = new System.Windows.Forms.TrackBar();
-            this.lblMusicVolumeRA2 = new System.Windows.Forms.Label();
-            this.chbShowToolTipsRA2 = new System.Windows.Forms.CheckBox();
-            this.chbShowTargetLinesRA2 = new System.Windows.Forms.CheckBox();
-            this.chbShowHiddenObjectsRA2 = new System.Windows.Forms.CheckBox();
-            this.chbEnableNoCDRA2 = new System.Windows.Forms.CheckBox();
-            this.lblScreenResolutionRA2 = new System.Windows.Forms.Label();
-            this.cmbResolutionRA2 = new System.Windows.Forms.ComboBox();
-            this.chbWindowedModeRA2 = new System.Windows.Forms.CheckBox();
-            this.chbUseGraphicsPatchRA2 = new System.Windows.Forms.CheckBox();
-            this.chbShuffleMusic = new System.Windows.Forms.CheckBox();
-            this.chbRepeatMusicRA2 = new System.Windows.Forms.CheckBox();
-            this.lblVoiceVolumeRA2 = new System.Windows.Forms.Label();
-            this.trbrVoiceVolume = new System.Windows.Forms.TrackBar();
             this.tabControl1.SuspendLayout();
             this.RA2OptionsTab.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.trackBar1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.trbrVoiceVolume)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.trbrScrollRateRA2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.trbrMusicVolumeRA2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.trbtrAudioVolumeRA2)).BeginInit();
             this.RA2HotkeyTab.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.HotkeyEditorDataGridRA2)).BeginInit();
             this.YROptionsTab.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.YRHotkeysTab.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.trbrScrollRateRA2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.trbtrAudioVolumeRA2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.trbrMusicVolumeRA2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.trbrVoiceVolume)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.HotkeyEditorDataGridYR)).BeginInit();
             this.SuspendLayout();
             // 
             // tabControl1
@@ -112,6 +117,10 @@
             // 
             // RA2OptionsTab
             // 
+            this.RA2OptionsTab.Controls.Add(this.lblDetailLevelRA2);
+            this.RA2OptionsTab.Controls.Add(this.trackBar1);
+            this.RA2OptionsTab.Controls.Add(this.chbVideoBackBufferRA2);
+            this.RA2OptionsTab.Controls.Add(this.chbAllowVRAMSidebarRA2);
             this.RA2OptionsTab.Controls.Add(this.trbrVoiceVolume);
             this.RA2OptionsTab.Controls.Add(this.lblVoiceVolumeRA2);
             this.RA2OptionsTab.Controls.Add(this.chbShuffleMusic);
@@ -139,6 +148,255 @@
             this.RA2OptionsTab.TabIndex = 0;
             this.RA2OptionsTab.Text = "RA2 options";
             this.RA2OptionsTab.UseVisualStyleBackColor = true;
+            // 
+            // lblDetailLevelRA2
+            // 
+            this.lblDetailLevelRA2.AutoSize = true;
+            this.lblDetailLevelRA2.Location = new System.Drawing.Point(6, 113);
+            this.lblDetailLevelRA2.Name = "lblDetailLevelRA2";
+            this.lblDetailLevelRA2.Size = new System.Drawing.Size(76, 18);
+            this.lblDetailLevelRA2.TabIndex = 34;
+            this.lblDetailLevelRA2.Text = "Detail level";
+            // 
+            // trackBar1
+            // 
+            this.trackBar1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.trackBar1.Location = new System.Drawing.Point(95, 113);
+            this.trackBar1.Maximum = 2;
+            this.trackBar1.Name = "trackBar1";
+            this.trackBar1.Size = new System.Drawing.Size(100, 45);
+            this.trackBar1.TabIndex = 33;
+            this.trackBar1.TickStyle = System.Windows.Forms.TickStyle.None;
+            this.trackBar1.Value = 2;
+            // 
+            // chbVideoBackBufferRA2
+            // 
+            this.chbVideoBackBufferRA2.AutoSize = true;
+            this.chbVideoBackBufferRA2.Location = new System.Drawing.Point(223, 161);
+            this.chbVideoBackBufferRA2.Name = "chbVideoBackBufferRA2";
+            this.chbVideoBackBufferRA2.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.chbVideoBackBufferRA2.Size = new System.Drawing.Size(140, 22);
+            this.chbVideoBackBufferRA2.TabIndex = 32;
+            this.chbVideoBackBufferRA2.Text = "Video back buffer";
+            this.chbVideoBackBufferRA2.UseVisualStyleBackColor = true;
+            // 
+            // chbAllowVRAMSidebarRA2
+            // 
+            this.chbAllowVRAMSidebarRA2.AutoSize = true;
+            this.chbAllowVRAMSidebarRA2.Location = new System.Drawing.Point(212, 114);
+            this.chbAllowVRAMSidebarRA2.Name = "chbAllowVRAMSidebarRA2";
+            this.chbAllowVRAMSidebarRA2.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.chbAllowVRAMSidebarRA2.Size = new System.Drawing.Size(151, 22);
+            this.chbAllowVRAMSidebarRA2.TabIndex = 31;
+            this.chbAllowVRAMSidebarRA2.Text = "Allow VRAM sidebar";
+            this.chbAllowVRAMSidebarRA2.UseVisualStyleBackColor = true;
+            // 
+            // trbrVoiceVolume
+            // 
+            this.trbrVoiceVolume.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.trbrVoiceVolume.Location = new System.Drawing.Point(92, 277);
+            this.trbrVoiceVolume.Maximum = 100;
+            this.trbrVoiceVolume.Name = "trbrVoiceVolume";
+            this.trbrVoiceVolume.Size = new System.Drawing.Size(100, 45);
+            this.trbrVoiceVolume.TabIndex = 30;
+            this.trbrVoiceVolume.TickStyle = System.Windows.Forms.TickStyle.None;
+            this.trbrVoiceVolume.Value = 100;
+            // 
+            // lblVoiceVolumeRA2
+            // 
+            this.lblVoiceVolumeRA2.AutoSize = true;
+            this.lblVoiceVolumeRA2.Location = new System.Drawing.Point(3, 280);
+            this.lblVoiceVolumeRA2.Name = "lblVoiceVolumeRA2";
+            this.lblVoiceVolumeRA2.Size = new System.Drawing.Size(87, 18);
+            this.lblVoiceVolumeRA2.TabIndex = 29;
+            this.lblVoiceVolumeRA2.Text = "Voice Volume";
+            // 
+            // chbShuffleMusic
+            // 
+            this.chbShuffleMusic.AutoSize = true;
+            this.chbShuffleMusic.Location = new System.Drawing.Point(424, 260);
+            this.chbShuffleMusic.Name = "chbShuffleMusic";
+            this.chbShuffleMusic.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.chbShuffleMusic.Size = new System.Drawing.Size(116, 22);
+            this.chbShuffleMusic.TabIndex = 28;
+            this.chbShuffleMusic.Text = " Shuffle music";
+            this.chbShuffleMusic.UseVisualStyleBackColor = true;
+            // 
+            // chbRepeatMusicRA2
+            // 
+            this.chbRepeatMusicRA2.AutoSize = true;
+            this.chbRepeatMusicRA2.Location = new System.Drawing.Point(435, 232);
+            this.chbRepeatMusicRA2.Name = "chbRepeatMusicRA2";
+            this.chbRepeatMusicRA2.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.chbRepeatMusicRA2.Size = new System.Drawing.Size(105, 22);
+            this.chbRepeatMusicRA2.TabIndex = 26;
+            this.chbRepeatMusicRA2.Text = "Repeat music";
+            this.chbRepeatMusicRA2.UseVisualStyleBackColor = true;
+            // 
+            // chbUseGraphicsPatchRA2
+            // 
+            this.chbUseGraphicsPatchRA2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.chbUseGraphicsPatchRA2.AutoSize = true;
+            this.chbUseGraphicsPatchRA2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.chbUseGraphicsPatchRA2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.chbUseGraphicsPatchRA2.Location = new System.Drawing.Point(399, 204);
+            this.chbUseGraphicsPatchRA2.Name = "chbUseGraphicsPatchRA2";
+            this.chbUseGraphicsPatchRA2.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.chbUseGraphicsPatchRA2.Size = new System.Drawing.Size(139, 22);
+            this.chbUseGraphicsPatchRA2.TabIndex = 18;
+            this.chbUseGraphicsPatchRA2.Text = "Use graphics patch";
+            this.chbUseGraphicsPatchRA2.UseVisualStyleBackColor = true;
+            // 
+            // chbWindowedModeRA2
+            // 
+            this.chbWindowedModeRA2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.chbWindowedModeRA2.AutoSize = true;
+            this.chbWindowedModeRA2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.chbWindowedModeRA2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.chbWindowedModeRA2.Location = new System.Drawing.Point(415, 161);
+            this.chbWindowedModeRA2.Name = "chbWindowedModeRA2";
+            this.chbWindowedModeRA2.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.chbWindowedModeRA2.Size = new System.Drawing.Size(123, 22);
+            this.chbWindowedModeRA2.TabIndex = 17;
+            this.chbWindowedModeRA2.Text = "Windowed mode";
+            this.chbWindowedModeRA2.UseVisualStyleBackColor = true;
+            // 
+            // lblScreenResolutionRA2
+            // 
+            this.lblScreenResolutionRA2.AutoSize = true;
+            this.lblScreenResolutionRA2.Location = new System.Drawing.Point(6, 19);
+            this.lblScreenResolutionRA2.Name = "lblScreenResolutionRA2";
+            this.lblScreenResolutionRA2.Size = new System.Drawing.Size(119, 18);
+            this.lblScreenResolutionRA2.TabIndex = 15;
+            this.lblScreenResolutionRA2.Text = "Screen resolution:";
+            // 
+            // cmbResolutionRA2
+            // 
+            this.cmbResolutionRA2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.cmbResolutionRA2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbResolutionRA2.FormattingEnabled = true;
+            this.cmbResolutionRA2.Location = new System.Drawing.Point(136, 15);
+            this.cmbResolutionRA2.Name = "cmbResolutionRA2";
+            this.cmbResolutionRA2.Size = new System.Drawing.Size(138, 26);
+            this.cmbResolutionRA2.TabIndex = 16;
+            // 
+            // chbShowHiddenObjectsRA2
+            // 
+            this.chbShowHiddenObjectsRA2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.chbShowHiddenObjectsRA2.AutoSize = true;
+            this.chbShowHiddenObjectsRA2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.chbShowHiddenObjectsRA2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.chbShowHiddenObjectsRA2.Location = new System.Drawing.Point(387, 113);
+            this.chbShowHiddenObjectsRA2.Name = "chbShowHiddenObjectsRA2";
+            this.chbShowHiddenObjectsRA2.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.chbShowHiddenObjectsRA2.Size = new System.Drawing.Size(151, 22);
+            this.chbShowHiddenObjectsRA2.TabIndex = 13;
+            this.chbShowHiddenObjectsRA2.Text = "Show hidden objects";
+            this.chbShowHiddenObjectsRA2.UseVisualStyleBackColor = true;
+            // 
+            // chbEnableNoCDRA2
+            // 
+            this.chbEnableNoCDRA2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.chbEnableNoCDRA2.AutoSize = true;
+            this.chbEnableNoCDRA2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.chbEnableNoCDRA2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.chbEnableNoCDRA2.Location = new System.Drawing.Point(435, 85);
+            this.chbEnableNoCDRA2.Name = "chbEnableNoCDRA2";
+            this.chbEnableNoCDRA2.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.chbEnableNoCDRA2.Size = new System.Drawing.Size(103, 22);
+            this.chbEnableNoCDRA2.TabIndex = 14;
+            this.chbEnableNoCDRA2.Text = "Enable NoCD";
+            this.chbEnableNoCDRA2.UseVisualStyleBackColor = true;
+            // 
+            // lblScrollRateRA2
+            // 
+            this.lblScrollRateRA2.AutoSize = true;
+            this.lblScrollRateRA2.Location = new System.Drawing.Point(3, 165);
+            this.lblScrollRateRA2.Name = "lblScrollRateRA2";
+            this.lblScrollRateRA2.Size = new System.Drawing.Size(76, 18);
+            this.lblScrollRateRA2.TabIndex = 3;
+            this.lblScrollRateRA2.Text = "Scroll Rate";
+            // 
+            // chbShowTargetLinesRA2
+            // 
+            this.chbShowTargetLinesRA2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.chbShowTargetLinesRA2.AutoSize = true;
+            this.chbShowTargetLinesRA2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.chbShowTargetLinesRA2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.chbShowTargetLinesRA2.Location = new System.Drawing.Point(408, 45);
+            this.chbShowTargetLinesRA2.Name = "chbShowTargetLinesRA2";
+            this.chbShowTargetLinesRA2.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.chbShowTargetLinesRA2.Size = new System.Drawing.Size(130, 22);
+            this.chbShowTargetLinesRA2.TabIndex = 11;
+            this.chbShowTargetLinesRA2.Text = "Show target lines";
+            this.chbShowTargetLinesRA2.UseVisualStyleBackColor = true;
+            // 
+            // trbrScrollRateRA2
+            // 
+            this.trbrScrollRateRA2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.trbrScrollRateRA2.Location = new System.Drawing.Point(92, 165);
+            this.trbrScrollRateRA2.Maximum = 40;
+            this.trbrScrollRateRA2.Minimum = 4;
+            this.trbrScrollRateRA2.Name = "trbrScrollRateRA2";
+            this.trbrScrollRateRA2.Size = new System.Drawing.Size(100, 45);
+            this.trbrScrollRateRA2.TabIndex = 2;
+            this.trbrScrollRateRA2.TickStyle = System.Windows.Forms.TickStyle.None;
+            this.trbrScrollRateRA2.Value = 4;
+            // 
+            // trbrMusicVolumeRA2
+            // 
+            this.trbrMusicVolumeRA2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.trbrMusicVolumeRA2.Location = new System.Drawing.Point(92, 248);
+            this.trbrMusicVolumeRA2.Maximum = 100;
+            this.trbrMusicVolumeRA2.Name = "trbrMusicVolumeRA2";
+            this.trbrMusicVolumeRA2.Size = new System.Drawing.Size(100, 45);
+            this.trbrMusicVolumeRA2.TabIndex = 6;
+            this.trbrMusicVolumeRA2.TickStyle = System.Windows.Forms.TickStyle.None;
+            this.trbrMusicVolumeRA2.Value = 100;
+            // 
+            // lblMusicVolumeRA2
+            // 
+            this.lblMusicVolumeRA2.AutoSize = true;
+            this.lblMusicVolumeRA2.Location = new System.Drawing.Point(6, 248);
+            this.lblMusicVolumeRA2.Name = "lblMusicVolumeRA2";
+            this.lblMusicVolumeRA2.Size = new System.Drawing.Size(89, 18);
+            this.lblMusicVolumeRA2.TabIndex = 7;
+            this.lblMusicVolumeRA2.Text = "Music Volume";
+            // 
+            // chbShowToolTipsRA2
+            // 
+            this.chbShowToolTipsRA2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.chbShowToolTipsRA2.AutoSize = true;
+            this.chbShowToolTipsRA2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.chbShowToolTipsRA2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.chbShowToolTipsRA2.Location = new System.Drawing.Point(432, 15);
+            this.chbShowToolTipsRA2.Name = "chbShowToolTipsRA2";
+            this.chbShowToolTipsRA2.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.chbShowToolTipsRA2.Size = new System.Drawing.Size(106, 22);
+            this.chbShowToolTipsRA2.TabIndex = 10;
+            this.chbShowToolTipsRA2.Text = "Show tooltips";
+            this.chbShowToolTipsRA2.UseVisualStyleBackColor = true;
+            // 
+            // lblAudioVolumeRA2
+            // 
+            this.lblAudioVolumeRA2.AutoSize = true;
+            this.lblAudioVolumeRA2.Location = new System.Drawing.Point(3, 204);
+            this.lblAudioVolumeRA2.Name = "lblAudioVolumeRA2";
+            this.lblAudioVolumeRA2.Size = new System.Drawing.Size(89, 18);
+            this.lblAudioVolumeRA2.TabIndex = 5;
+            this.lblAudioVolumeRA2.Text = "Audio Volume";
+            // 
+            // trbtrAudioVolumeRA2
+            // 
+            this.trbtrAudioVolumeRA2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.trbtrAudioVolumeRA2.Location = new System.Drawing.Point(92, 204);
+            this.trbtrAudioVolumeRA2.Maximum = 100;
+            this.trbtrAudioVolumeRA2.Name = "trbtrAudioVolumeRA2";
+            this.trbtrAudioVolumeRA2.Size = new System.Drawing.Size(100, 45);
+            this.trbtrAudioVolumeRA2.TabIndex = 4;
+            this.trbtrAudioVolumeRA2.TickStyle = System.Windows.Forms.TickStyle.None;
+            this.trbtrAudioVolumeRA2.Value = 100;
             // 
             // RA2HotkeyTab
             // 
@@ -195,11 +453,9 @@
             this.HotkeyEditorDataGridRA2.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.HotkeyEditorDataGridRA2.Size = new System.Drawing.Size(613, 310);
             this.HotkeyEditorDataGridRA2.TabIndex = 1;
-            this.HotkeyEditorDataGridRA2.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.HotkeyEditorDataGrid_CellContentClick);
-            this.HotkeyEditorDataGridRA2.KeyDown += new System.Windows.Forms.KeyEventHandler(this.HotkeyEditorDataGrid_KeyDown);
-            this.HotkeyEditorDataGridRA2.KeyUp += new System.Windows.Forms.KeyEventHandler(this.HotkeyEditorDataGrid_KeyUp);
-            this.HotkeyEditorDataGridRA2.MouseClick += new System.Windows.Forms.MouseEventHandler(this.HotkeyEditorDataGrid_MouseClick);
-            this.HotkeyEditorDataGridRA2.MouseEnter += new System.EventHandler(this.HotkeyEditorDataGrid_MouseEnter);
+            this.HotkeyEditorDataGridRA2.KeyDown += new System.Windows.Forms.KeyEventHandler(this.HotkeyEditorDataGridRA2_KeyDown);
+            this.HotkeyEditorDataGridRA2.KeyUp += new System.Windows.Forms.KeyEventHandler(this.HotkeyEditorDataGridRA2_KeyUp);
+            this.HotkeyEditorDataGridRA2.MouseEnter += new System.EventHandler(this.HotkeyEditorDataGridRA2_MouseEnter);
             // 
             // Function
             // 
@@ -380,6 +636,84 @@
             this.BitsPerPixelComboBox.Size = new System.Drawing.Size(112, 26);
             this.BitsPerPixelComboBox.TabIndex = 17;
             // 
+            // YRHotkeysTab
+            // 
+            this.YRHotkeysTab.Controls.Add(this.HotkeyEditorDataGridYR);
+            this.YRHotkeysTab.Location = new System.Drawing.Point(4, 35);
+            this.YRHotkeysTab.Name = "YRHotkeysTab";
+            this.YRHotkeysTab.Padding = new System.Windows.Forms.Padding(3);
+            this.YRHotkeysTab.Size = new System.Drawing.Size(625, 322);
+            this.YRHotkeysTab.TabIndex = 3;
+            this.YRHotkeysTab.Text = "YR hotkeys";
+            this.YRHotkeysTab.UseVisualStyleBackColor = true;
+            // 
+            // HotkeyEditorDataGridYR
+            // 
+            this.HotkeyEditorDataGridYR.AllowUserToDeleteRows = false;
+            this.HotkeyEditorDataGridYR.AllowUserToOrderColumns = true;
+            this.HotkeyEditorDataGridYR.AllowUserToResizeRows = false;
+            this.HotkeyEditorDataGridYR.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.HotkeyEditorDataGridYR.BackgroundColor = System.Drawing.SystemColors.ButtonFace;
+            this.HotkeyEditorDataGridYR.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.Red;
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.HotkeyEditorDataGridYR.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle4;
+            this.HotkeyEditorDataGridYR.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.HotkeyEditorDataGridYR.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataGridViewTextBoxColumn1,
+            this.dataGridViewTextBoxColumn2});
+            this.HotkeyEditorDataGridYR.Cursor = System.Windows.Forms.Cursors.Hand;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle5.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle5.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.Color.Red;
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.HotkeyEditorDataGridYR.DefaultCellStyle = dataGridViewCellStyle5;
+            this.HotkeyEditorDataGridYR.EditMode = System.Windows.Forms.DataGridViewEditMode.EditOnKeystroke;
+            this.HotkeyEditorDataGridYR.Location = new System.Drawing.Point(0, 0);
+            this.HotkeyEditorDataGridYR.MultiSelect = false;
+            this.HotkeyEditorDataGridYR.Name = "HotkeyEditorDataGridYR";
+            this.HotkeyEditorDataGridYR.RowHeadersVisible = false;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopLeft;
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.HotkeyEditorDataGridYR.RowsDefaultCellStyle = dataGridViewCellStyle6;
+            this.HotkeyEditorDataGridYR.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.HotkeyEditorDataGridYR.Size = new System.Drawing.Size(456, 322);
+            this.HotkeyEditorDataGridYR.TabIndex = 2;
+            this.HotkeyEditorDataGridYR.KeyDown += new System.Windows.Forms.KeyEventHandler(this.HotkeyEditorDataGridYR_KeyDown);
+            this.HotkeyEditorDataGridYR.KeyUp += new System.Windows.Forms.KeyEventHandler(this.HotkeyEditorDataGridYR_KeyUp);
+            this.HotkeyEditorDataGridYR.MouseEnter += new System.EventHandler(this.HotkeyEditorDataGridYR_MouseEnter);
+            // 
+            // dataGridViewTextBoxColumn1
+            // 
+            this.dataGridViewTextBoxColumn1.Frozen = true;
+            this.dataGridViewTextBoxColumn1.HeaderText = "Function";
+            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
+            this.dataGridViewTextBoxColumn1.ReadOnly = true;
+            this.dataGridViewTextBoxColumn1.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridViewTextBoxColumn1.Width = 250;
+            // 
+            // dataGridViewTextBoxColumn2
+            // 
+            this.dataGridViewTextBoxColumn2.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
+            this.dataGridViewTextBoxColumn2.FillWeight = 600F;
+            this.dataGridViewTextBoxColumn2.Frozen = true;
+            this.dataGridViewTextBoxColumn2.HeaderText = "Assigned Key";
+            this.dataGridViewTextBoxColumn2.MinimumWidth = 600;
+            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
+            this.dataGridViewTextBoxColumn2.ReadOnly = true;
+            this.dataGridViewTextBoxColumn2.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridViewTextBoxColumn2.Width = 600;
+            // 
             // OkButton
             // 
             this.OkButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
@@ -438,290 +772,6 @@
             this.ApplyButton.UseVisualStyleBackColor = true;
             this.ApplyButton.Click += new System.EventHandler(this.ApplyButton_Click);
             // 
-            // YRHotkeysTab
-            // 
-            this.YRHotkeysTab.Controls.Add(this.dataGridView1);
-            this.YRHotkeysTab.Location = new System.Drawing.Point(4, 35);
-            this.YRHotkeysTab.Name = "YRHotkeysTab";
-            this.YRHotkeysTab.Padding = new System.Windows.Forms.Padding(3);
-            this.YRHotkeysTab.Size = new System.Drawing.Size(625, 322);
-            this.YRHotkeysTab.TabIndex = 3;
-            this.YRHotkeysTab.Text = "YR hotkeys";
-            this.YRHotkeysTab.UseVisualStyleBackColor = true;
-            this.YRHotkeysTab.Click += new System.EventHandler(this.tabPage1_Click);
-            // 
-            // dataGridView1
-            // 
-            this.dataGridView1.AllowUserToDeleteRows = false;
-            this.dataGridView1.AllowUserToOrderColumns = true;
-            this.dataGridView1.AllowUserToResizeRows = false;
-            this.dataGridView1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.ButtonFace;
-            this.dataGridView1.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.Red;
-            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle4;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.dataGridViewTextBoxColumn1,
-            this.dataGridViewTextBoxColumn2});
-            this.dataGridView1.Cursor = System.Windows.Forms.Cursors.Hand;
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle5.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle5.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.Color.Red;
-            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle5;
-            this.dataGridView1.EditMode = System.Windows.Forms.DataGridViewEditMode.EditOnKeystroke;
-            this.dataGridView1.Location = new System.Drawing.Point(0, 0);
-            this.dataGridView1.MultiSelect = false;
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersVisible = false;
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopLeft;
-            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridView1.RowsDefaultCellStyle = dataGridViewCellStyle6;
-            this.dataGridView1.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.dataGridView1.Size = new System.Drawing.Size(456, 322);
-            this.dataGridView1.TabIndex = 2;
-            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
-            // 
-            // dataGridViewTextBoxColumn1
-            // 
-            this.dataGridViewTextBoxColumn1.Frozen = true;
-            this.dataGridViewTextBoxColumn1.HeaderText = "Function";
-            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
-            this.dataGridViewTextBoxColumn1.ReadOnly = true;
-            this.dataGridViewTextBoxColumn1.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridViewTextBoxColumn1.Width = 250;
-            // 
-            // dataGridViewTextBoxColumn2
-            // 
-            this.dataGridViewTextBoxColumn2.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
-            this.dataGridViewTextBoxColumn2.FillWeight = 600F;
-            this.dataGridViewTextBoxColumn2.Frozen = true;
-            this.dataGridViewTextBoxColumn2.HeaderText = "Assigned Key";
-            this.dataGridViewTextBoxColumn2.MinimumWidth = 600;
-            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
-            this.dataGridViewTextBoxColumn2.ReadOnly = true;
-            this.dataGridViewTextBoxColumn2.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridViewTextBoxColumn2.Width = 600;
-            // 
-            // trbrScrollRateRA2
-            // 
-            this.trbrScrollRateRA2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.trbrScrollRateRA2.Location = new System.Drawing.Point(92, 165);
-            this.trbrScrollRateRA2.Maximum = 40;
-            this.trbrScrollRateRA2.Minimum = 4;
-            this.trbrScrollRateRA2.Name = "trbrScrollRateRA2";
-            this.trbrScrollRateRA2.Size = new System.Drawing.Size(100, 45);
-            this.trbrScrollRateRA2.TabIndex = 2;
-            this.trbrScrollRateRA2.TickStyle = System.Windows.Forms.TickStyle.None;
-            this.trbrScrollRateRA2.Value = 4;
-            // 
-            // lblScrollRateRA2
-            // 
-            this.lblScrollRateRA2.AutoSize = true;
-            this.lblScrollRateRA2.Location = new System.Drawing.Point(3, 165);
-            this.lblScrollRateRA2.Name = "lblScrollRateRA2";
-            this.lblScrollRateRA2.Size = new System.Drawing.Size(76, 18);
-            this.lblScrollRateRA2.TabIndex = 3;
-            this.lblScrollRateRA2.Text = "Scroll Rate";
-            // 
-            // trbtrAudioVolumeRA2
-            // 
-            this.trbtrAudioVolumeRA2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.trbtrAudioVolumeRA2.Location = new System.Drawing.Point(92, 204);
-            this.trbtrAudioVolumeRA2.Maximum = 100;
-            this.trbtrAudioVolumeRA2.Name = "trbtrAudioVolumeRA2";
-            this.trbtrAudioVolumeRA2.Size = new System.Drawing.Size(100, 45);
-            this.trbtrAudioVolumeRA2.TabIndex = 4;
-            this.trbtrAudioVolumeRA2.TickStyle = System.Windows.Forms.TickStyle.None;
-            this.trbtrAudioVolumeRA2.Value = 100;
-            // 
-            // lblAudioVolumeRA2
-            // 
-            this.lblAudioVolumeRA2.AutoSize = true;
-            this.lblAudioVolumeRA2.Location = new System.Drawing.Point(3, 204);
-            this.lblAudioVolumeRA2.Name = "lblAudioVolumeRA2";
-            this.lblAudioVolumeRA2.Size = new System.Drawing.Size(89, 18);
-            this.lblAudioVolumeRA2.TabIndex = 5;
-            this.lblAudioVolumeRA2.Text = "Audio Volume";
-            // 
-            // trbrMusicVolumeRA2
-            // 
-            this.trbrMusicVolumeRA2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.trbrMusicVolumeRA2.Location = new System.Drawing.Point(92, 248);
-            this.trbrMusicVolumeRA2.Maximum = 100;
-            this.trbrMusicVolumeRA2.Name = "trbrMusicVolumeRA2";
-            this.trbrMusicVolumeRA2.Size = new System.Drawing.Size(100, 45);
-            this.trbrMusicVolumeRA2.TabIndex = 6;
-            this.trbrMusicVolumeRA2.TickStyle = System.Windows.Forms.TickStyle.None;
-            this.trbrMusicVolumeRA2.Value = 100;
-            // 
-            // lblMusicVolumeRA2
-            // 
-            this.lblMusicVolumeRA2.AutoSize = true;
-            this.lblMusicVolumeRA2.Location = new System.Drawing.Point(6, 248);
-            this.lblMusicVolumeRA2.Name = "lblMusicVolumeRA2";
-            this.lblMusicVolumeRA2.Size = new System.Drawing.Size(89, 18);
-            this.lblMusicVolumeRA2.TabIndex = 7;
-            this.lblMusicVolumeRA2.Text = "Music Volume";
-            // 
-            // chbShowToolTipsRA2
-            // 
-            this.chbShowToolTipsRA2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.chbShowToolTipsRA2.AutoSize = true;
-            this.chbShowToolTipsRA2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.chbShowToolTipsRA2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.chbShowToolTipsRA2.Location = new System.Drawing.Point(432, 15);
-            this.chbShowToolTipsRA2.Name = "chbShowToolTipsRA2";
-            this.chbShowToolTipsRA2.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.chbShowToolTipsRA2.Size = new System.Drawing.Size(106, 22);
-            this.chbShowToolTipsRA2.TabIndex = 10;
-            this.chbShowToolTipsRA2.Text = "Show tooltips";
-            this.chbShowToolTipsRA2.UseVisualStyleBackColor = true;
-            // 
-            // chbShowTargetLinesRA2
-            // 
-            this.chbShowTargetLinesRA2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.chbShowTargetLinesRA2.AutoSize = true;
-            this.chbShowTargetLinesRA2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.chbShowTargetLinesRA2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.chbShowTargetLinesRA2.Location = new System.Drawing.Point(408, 45);
-            this.chbShowTargetLinesRA2.Name = "chbShowTargetLinesRA2";
-            this.chbShowTargetLinesRA2.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.chbShowTargetLinesRA2.Size = new System.Drawing.Size(130, 22);
-            this.chbShowTargetLinesRA2.TabIndex = 11;
-            this.chbShowTargetLinesRA2.Text = "Show target lines";
-            this.chbShowTargetLinesRA2.UseVisualStyleBackColor = true;
-            // 
-            // chbShowHiddenObjectsRA2
-            // 
-            this.chbShowHiddenObjectsRA2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.chbShowHiddenObjectsRA2.AutoSize = true;
-            this.chbShowHiddenObjectsRA2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.chbShowHiddenObjectsRA2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.chbShowHiddenObjectsRA2.Location = new System.Drawing.Point(387, 113);
-            this.chbShowHiddenObjectsRA2.Name = "chbShowHiddenObjectsRA2";
-            this.chbShowHiddenObjectsRA2.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.chbShowHiddenObjectsRA2.Size = new System.Drawing.Size(151, 22);
-            this.chbShowHiddenObjectsRA2.TabIndex = 13;
-            this.chbShowHiddenObjectsRA2.Text = "Show hidden objects";
-            this.chbShowHiddenObjectsRA2.UseVisualStyleBackColor = true;
-            // 
-            // chbEnableNoCDRA2
-            // 
-            this.chbEnableNoCDRA2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.chbEnableNoCDRA2.AutoSize = true;
-            this.chbEnableNoCDRA2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.chbEnableNoCDRA2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.chbEnableNoCDRA2.Location = new System.Drawing.Point(435, 85);
-            this.chbEnableNoCDRA2.Name = "chbEnableNoCDRA2";
-            this.chbEnableNoCDRA2.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.chbEnableNoCDRA2.Size = new System.Drawing.Size(103, 22);
-            this.chbEnableNoCDRA2.TabIndex = 14;
-            this.chbEnableNoCDRA2.Text = "Enable NoCD";
-            this.chbEnableNoCDRA2.UseVisualStyleBackColor = true;
-            // 
-            // lblScreenResolutionRA2
-            // 
-            this.lblScreenResolutionRA2.AutoSize = true;
-            this.lblScreenResolutionRA2.Location = new System.Drawing.Point(6, 19);
-            this.lblScreenResolutionRA2.Name = "lblScreenResolutionRA2";
-            this.lblScreenResolutionRA2.Size = new System.Drawing.Size(119, 18);
-            this.lblScreenResolutionRA2.TabIndex = 15;
-            this.lblScreenResolutionRA2.Text = "Screen resolution:";
-            // 
-            // cmbResolutionRA2
-            // 
-            this.cmbResolutionRA2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.cmbResolutionRA2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbResolutionRA2.FormattingEnabled = true;
-            this.cmbResolutionRA2.Location = new System.Drawing.Point(136, 15);
-            this.cmbResolutionRA2.Name = "cmbResolutionRA2";
-            this.cmbResolutionRA2.Size = new System.Drawing.Size(138, 26);
-            this.cmbResolutionRA2.TabIndex = 16;
-            // 
-            // chbWindowedModeRA2
-            // 
-            this.chbWindowedModeRA2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.chbWindowedModeRA2.AutoSize = true;
-            this.chbWindowedModeRA2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.chbWindowedModeRA2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.chbWindowedModeRA2.Location = new System.Drawing.Point(415, 161);
-            this.chbWindowedModeRA2.Name = "chbWindowedModeRA2";
-            this.chbWindowedModeRA2.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.chbWindowedModeRA2.Size = new System.Drawing.Size(123, 22);
-            this.chbWindowedModeRA2.TabIndex = 17;
-            this.chbWindowedModeRA2.Text = "Windowed mode";
-            this.chbWindowedModeRA2.UseVisualStyleBackColor = true;
-            // 
-            // chbUseGraphicsPatchRA2
-            // 
-            this.chbUseGraphicsPatchRA2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.chbUseGraphicsPatchRA2.AutoSize = true;
-            this.chbUseGraphicsPatchRA2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.chbUseGraphicsPatchRA2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.chbUseGraphicsPatchRA2.Location = new System.Drawing.Point(399, 204);
-            this.chbUseGraphicsPatchRA2.Name = "chbUseGraphicsPatchRA2";
-            this.chbUseGraphicsPatchRA2.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.chbUseGraphicsPatchRA2.Size = new System.Drawing.Size(139, 22);
-            this.chbUseGraphicsPatchRA2.TabIndex = 18;
-            this.chbUseGraphicsPatchRA2.Text = "Use graphics patch";
-            this.chbUseGraphicsPatchRA2.UseVisualStyleBackColor = true;
-            // 
-            // chbShuffleMusic
-            // 
-            this.chbShuffleMusic.AutoSize = true;
-            this.chbShuffleMusic.Location = new System.Drawing.Point(424, 260);
-            this.chbShuffleMusic.Name = "chbShuffleMusic";
-            this.chbShuffleMusic.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.chbShuffleMusic.Size = new System.Drawing.Size(116, 22);
-            this.chbShuffleMusic.TabIndex = 28;
-            this.chbShuffleMusic.Text = " Shuffle music";
-            this.chbShuffleMusic.UseVisualStyleBackColor = true;
-            // 
-            // chbRepeatMusicRA2
-            // 
-            this.chbRepeatMusicRA2.AutoSize = true;
-            this.chbRepeatMusicRA2.Location = new System.Drawing.Point(435, 232);
-            this.chbRepeatMusicRA2.Name = "chbRepeatMusicRA2";
-            this.chbRepeatMusicRA2.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.chbRepeatMusicRA2.Size = new System.Drawing.Size(105, 22);
-            this.chbRepeatMusicRA2.TabIndex = 26;
-            this.chbRepeatMusicRA2.Text = "Repeat music";
-            this.chbRepeatMusicRA2.UseVisualStyleBackColor = true;
-            // 
-            // lblVoiceVolumeRA2
-            // 
-            this.lblVoiceVolumeRA2.AutoSize = true;
-            this.lblVoiceVolumeRA2.Location = new System.Drawing.Point(3, 280);
-            this.lblVoiceVolumeRA2.Name = "lblVoiceVolumeRA2";
-            this.lblVoiceVolumeRA2.Size = new System.Drawing.Size(87, 18);
-            this.lblVoiceVolumeRA2.TabIndex = 29;
-            this.lblVoiceVolumeRA2.Text = "Voice Volume";
-            // 
-            // trbrVoiceVolume
-            // 
-            this.trbrVoiceVolume.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.trbrVoiceVolume.Location = new System.Drawing.Point(92, 277);
-            this.trbrVoiceVolume.Maximum = 100;
-            this.trbrVoiceVolume.Name = "trbrVoiceVolume";
-            this.trbrVoiceVolume.Size = new System.Drawing.Size(100, 45);
-            this.trbrVoiceVolume.TabIndex = 30;
-            this.trbrVoiceVolume.TickStyle = System.Windows.Forms.TickStyle.None;
-            this.trbrVoiceVolume.Value = 100;
-            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -742,17 +792,18 @@
             this.tabControl1.ResumeLayout(false);
             this.RA2OptionsTab.ResumeLayout(false);
             this.RA2OptionsTab.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.trackBar1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.trbrVoiceVolume)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.trbrScrollRateRA2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.trbrMusicVolumeRA2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.trbtrAudioVolumeRA2)).EndInit();
             this.RA2HotkeyTab.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.HotkeyEditorDataGridRA2)).EndInit();
             this.YROptionsTab.ResumeLayout(false);
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
             this.YRHotkeysTab.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.trbrScrollRateRA2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.trbtrAudioVolumeRA2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.trbrMusicVolumeRA2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.trbrVoiceVolume)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.HotkeyEditorDataGridYR)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -782,7 +833,7 @@
         private System.Windows.Forms.CheckBox FakeVsyncCheckBox;
         private System.Windows.Forms.CheckBox SingleProcessorAffinityCheckBox;
         private System.Windows.Forms.TabPage YRHotkeysTab;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView HotkeyEditorDataGridYR;
         private System.Windows.Forms.CheckBox chbShowHiddenObjectsRA2;
         private System.Windows.Forms.CheckBox chbEnableNoCDRA2;
         private System.Windows.Forms.Label lblScrollRateRA2;
@@ -803,6 +854,10 @@
         private System.Windows.Forms.ComboBox cmbResolutionRA2;
         private System.Windows.Forms.TrackBar trbrVoiceVolume;
         private System.Windows.Forms.Label lblVoiceVolumeRA2;
+        private System.Windows.Forms.Label lblDetailLevelRA2;
+        private System.Windows.Forms.TrackBar trackBar1;
+        private System.Windows.Forms.CheckBox chbVideoBackBufferRA2;
+        private System.Windows.Forms.CheckBox chbAllowVRAMSidebarRA2;
     }
 }
 

@@ -121,10 +121,16 @@
   <data name="aqrit" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\resources\aqrit.cfg;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
   </data>
-  <data name="ddwrapper" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\ddwrapper.dll;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="keyboardini" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\keyboard.ini;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="keyboardmdini" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\keyboardmd.ini;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
   </data>
   <data name="ra2ini" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\ra2.ini;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+    <value>..\Resources\ra2.ini;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;iso-8859-1</value>
+  </data>
+  <data name="ra2mdini" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ra21.ini;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
   </data>
 </root>

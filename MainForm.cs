@@ -19,13 +19,14 @@ namespace RA2_YR_Config
         public static string KeyboardMDINIPath = Program.path + "keyboardmd.ini";
 
         public static GameHotkeys GameHotkeysRA2 = new GameHotkeys();
+        public static GameHotkeys GameHotkeysYR = new GameHotkeys();
 
         public MainForm()
         {
             InitializeComponent();
         }
 
-        public void Load_Or_Create_INI(IniFile Ini, string path, string RawIniText)
+        public void Load_Or_Create_INI(ref IniFile Ini, string path, string RawIniText)
         {
             if (File.Exists(path)) Ini = new IniFile(path);
             else Ini = new IniFile(path, RawIniText);
@@ -38,10 +39,10 @@ namespace RA2_YR_Config
 
         private void Load_Settings_INI_Files()
         {
-            Load_Or_Create_INI(RA2INI, RA2INIPath, Properties.Resources.ra2ini);
-            Load_Or_Create_INI(RA2MDINI, RA2MDINIPath, Properties.Resources.ra2mdini);
-            Load_Or_Create_INI(KeyboardINI, KeyboardINIPath, Properties.Resources.keyboardini);
-            Load_Or_Create_INI(KeyboardMDINI, KeyboardMDINIPath, Properties.Resources.keyboardmdini);
+            Load_Or_Create_INI(ref RA2INI, RA2INIPath, Properties.Resources.ra2ini);
+            Load_Or_Create_INI(ref RA2MDINI, RA2MDINIPath, Properties.Resources.ra2mdini);
+            Load_Or_Create_INI(ref KeyboardINI, KeyboardINIPath, Properties.Resources.keyboardini);
+            Load_Or_Create_INI(ref KeyboardMDINI, KeyboardMDINIPath, Properties.Resources.keyboardmdini);
         }
 
         private void OkButton_Click(object sender, EventArgs e)
@@ -57,8 +58,6 @@ namespace RA2_YR_Config
 
         private void ResetButton_Click(object sender, EventArgs e)
         {
-            RA2INI = new IniFile(Dune2000IniPath, Properties.Resources.ra2ini);
-            aqritCfg = new IniFile(aqritCfgPath, Properties.Resources.aqrit) { BooleanWriteMode = BooleanMode.ONE_ZERO };
             Load_Settings();
         }
 
@@ -73,13 +72,9 @@ namespace RA2_YR_Config
             //### dune2000.ini ###
             ResolutionComboBox.Items.Clear();
 
-            List<String> resolutions = screenres.ScreenResolutionOperations.getScreenResolutions(640, 400, 16);
-            String resolution = getCurrentGameRes(RA2INI);
-            cmbResolutionRA2.DataSource = resolutions;
-            if (resolutions.Contains(resolution))
-                cmbResolutionRA2.SelectedIndex = resolutions.IndexOf(resolution);
-
-            Load_Hotkey_Editor(HotkeyEditorDataGridRA2, GameHotkeysRA2, RA2INI);
+            Load_Resolutions(cmbResolutionRA2, RA2INI);
+            Load_Hotkey_Editor(HotkeyEditorDataGridRA2, GameHotkeysRA2, KeyboardINI);
+            Load_Hotkey_Editor(HotkeyEditorDataGridYR, GameHotkeysYR, KeyboardMDINI);
 
             try
             {
@@ -96,6 +91,15 @@ namespace RA2_YR_Config
             chbEnableNoCDRA2.Checked = RA2INI.GetBoolValue("Options", "ForceNoCD", true);
             chbShowHiddenObjectsRA2.Checked = RA2INI.GetBoolValue("Options", "SlowSideBarScrolling", false);
 
+        }
+
+        private void Load_Resolutions(ComboBox cmbox, IniFile Inifile)
+        {
+            List<String> resolutions = screenres.ScreenResolutionOperations.getScreenResolutions(640, 400, 16);
+            String resolution = getCurrentGameRes(Inifile);
+            cmbox.DataSource = resolutions;
+            if (resolutions.Contains(resolution))
+                cmbox.SelectedIndex = resolutions.IndexOf(resolution);
         }
 
         private void Load_Hotkey_Editor(DataGridView dgv, GameHotkeys ghks, IniFile inifile)
@@ -116,7 +120,8 @@ namespace RA2_YR_Config
         private void SaveSettings()
         {
             //### dune2000.ini ###
-            GameHotkeysRA2.Save_Hotkeys(RA2INI);
+            GameHotkeysRA2.Save_Hotkeys(KeyboardINI);
+            GameHotkeysYR.Save_Hotkeys(KeyboardMDINI);
 
             RA2INI.SetIntValue("Options", "ScrollRate", trbrScrollRateRA2.Value);
             RA2INI.SetIntValue("Options", "SFXVolume", trbtrAudioVolumeRA2.Value);
@@ -128,17 +133,26 @@ namespace RA2_YR_Config
             RA2INI.SetBoolValue("Options", "SlowSideBarScrolling", chbShowHiddenObjectsRA2.Checked);
             RA2INI.SetStringValue("Options", "GameBitsPerPixel", (string)BitsPerPixelComboBox.SelectedItem);
 
-            var res = ResolutionComboBox.SelectedItem.ToString().Split('x');
+            var res = cmbResolutionRA2.SelectedItem.ToString().Split('x');
             RA2INI.SetStringValue("Options", "GameWidth", res[0]);
             RA2INI.SetStringValue("Options", "GameHeight", res[1]);
 
             RA2INI.WriteIni();
 
+
+            RA2MDINI.WriteIni();
+
         }
 
-        private void HotkeyEditorDataGrid_KeyDown(object sender, KeyEventArgs e)
+        private void HotkeyEditorDataGridRA2_KeyDown(object sender, KeyEventArgs e)
         {
             Hotkey_Editor_Key_Down(e, HotkeyEditorDataGridRA2, GameHotkeysRA2);
+        }
+
+
+        private void HotkeyEditorDataGridYR_KeyDown(object sender, KeyEventArgs e)
+        {
+            Hotkey_Editor_Key_Down(e, HotkeyEditorDataGridYR, GameHotkeysYR);
         }
 
         private void Hotkey_Editor_Key_Down(KeyEventArgs e, DataGridView dgv, GameHotkeys ghks)
@@ -149,7 +163,7 @@ namespace RA2_YR_Config
                 || e.KeyCode == Keys.ShiftKey || e.KeyCode == Keys.RControlKey
                 || e.KeyCode == Keys.RMenu || e.KeyCode == Keys.RShiftKey))
             {
-                HotkeyEditorDataGridRA2.CurrentCell.Value = "";
+                dgv.CurrentCell.Value = "";
 
                 if ((int)(e.Modifiers & Keys.Control) == (int)Keys.Control)
                     dgv.CurrentCell.Value += "Crl+";
@@ -172,33 +186,19 @@ namespace RA2_YR_Config
             dgv.CurrentCell.Value = ghks.Hotkey_Display_Value(dgv.CurrentCell.RowIndex);
         }
 
-        private void HotkeyEditorDataGrid_MouseEnter(object sender, EventArgs e)
+        private void HotkeyEditorDataGridRA2_MouseEnter(object sender, EventArgs e)
         {
             Hotkey_Editor_Mouse_Enter(HotkeyEditorDataGridRA2);
+        }
+
+        private void HotkeyEditorDataGridYR_MouseEnter(object sender, EventArgs e)
+        {
+            Hotkey_Editor_Mouse_Enter(HotkeyEditorDataGridYR);
         }
 
         private void Hotkey_Editor_Mouse_Enter(DataGridView dgv)
         {
             dgv.Select();
-        }
-
-        private void HotkeyEditorDataGrid_MouseClick(object sender, MouseEventArgs e)
-        {
-        }
-
-        private void HotkeyEditorDataGrid_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
-
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
-
-        private void tabPage1_Click(object sender, EventArgs e)
-        {
-
         }
 
         public String getCurrentGameRes(IniFile inifile)
@@ -213,14 +213,19 @@ namespace RA2_YR_Config
             return width + "x" + height;
         }
 
-        private void HotkeyEditorDataGrid_KeyUp(object sender, KeyEventArgs e)
+        private void HotkeyEditorDataGridRA2_KeyUp(object sender, KeyEventArgs e)
         {
-            Set_Datagrid_Current_Cell_Value_To_Internal_GameHotkey_Data(HotkeyEditorDataGridRA2);
+            Set_Datagrid_Current_Cell_Value_To_Internal_GameHotkey_Data(HotkeyEditorDataGridRA2, GameHotkeysRA2);
         }
 
-        private void Set_Datagrid_Current_Cell_Value_To_Internal_GameHotkey_Data(DataGridView dgv)
+        private void HotkeyEditorDataGridYR_KeyUp(object sender, KeyEventArgs e)
         {
-            dgv.CurrentCell.Value = GameHotkeysRA2.Hotkey_Display_Value(dgv.CurrentCell.RowIndex);
+            Set_Datagrid_Current_Cell_Value_To_Internal_GameHotkey_Data(HotkeyEditorDataGridYR, GameHotkeysYR);
+        }
+
+        private void Set_Datagrid_Current_Cell_Value_To_Internal_GameHotkey_Data(DataGridView dgv, GameHotkeys ghks)
+        {
+            dgv.CurrentCell.Value = ghks.Hotkey_Display_Value(dgv.CurrentCell.RowIndex);
         }
 
     }

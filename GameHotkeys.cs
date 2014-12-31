@@ -48,6 +48,8 @@ namespace RA2_YR_Config
                 
                 inifile.SetIntValue("Hotkey", HK.HotkeyName, CalculatedKey);
             }
+
+            inifile.WriteIni();
         }
 
 

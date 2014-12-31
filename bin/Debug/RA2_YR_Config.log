@@ -1,0 +1,14 @@
+31/12/2014 15:21:11
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at RA2_YR_Config.MainForm.getCurrentGameRes(IniFile inifile) in c:\Users\maikel\Desktop\RA_YR_Config\MainForm.cs:line 211
+   at RA2_YR_Config.MainForm.Load_Resolutions(ComboBox cmbox, IniFile Inifile) in c:\Users\maikel\Desktop\RA_YR_Config\MainForm.cs:line 97
+   at RA2_YR_Config.MainForm.Load_Settings() in c:\Users\maikel\Desktop\RA_YR_Config\MainForm.cs:line 74
+   at RA2_YR_Config.MainForm.MainForm_Load(Object sender, EventArgs e) in c:\Users\maikel\Desktop\RA_YR_Config\MainForm.cs:line 36
+   at System.Windows.Forms.Form.OnLoad(EventArgs e)
+   at System.Windows.Forms.Control.CreateControl(Boolean fIgnoreVisible)
+   at System.Windows.Forms.Control.CreateControl()
+   at System.Windows.Forms.Control.WmShowWindow(Message& m)
+   at System.Windows.Forms.Control.WndProc(Message& m)
+   at System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   at System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+
