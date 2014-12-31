@@ -28,12 +28,12 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.RA2OptionsTab = new System.Windows.Forms.TabPage();
             this.lblDetailLevelRA2 = new System.Windows.Forms.Label();
@@ -60,8 +60,6 @@
             this.trbrAudioVolumeRA2 = new System.Windows.Forms.TrackBar();
             this.RA2HotkeyTab = new System.Windows.Forms.TabPage();
             this.HotkeyEditorDataGridRA2 = new System.Windows.Forms.DataGridView();
-            this.Function = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.AssignedKey = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.YROptionsTab = new System.Windows.Forms.TabPage();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.SingleProcessorAffinityCheckBox = new System.Windows.Forms.CheckBox();
@@ -76,12 +74,16 @@
             this.BitsPerPixelComboBox = new System.Windows.Forms.ComboBox();
             this.YRHotkeysTab = new System.Windows.Forms.TabPage();
             this.HotkeyEditorDataGridYR = new System.Windows.Forms.DataGridView();
-            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.OkButton = new System.Windows.Forms.Button();
             this.CancelButton = new System.Windows.Forms.Button();
             this.ResetButton = new System.Windows.Forms.Button();
             this.ApplyButton = new System.Windows.Forms.Button();
+            this.ButResetToDefaultHotkeysYR = new System.Windows.Forms.Button();
+            this.butResetToDefaultHotkeysRA2 = new System.Windows.Forms.Button();
+            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Function = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.AssignedKey = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tabControl1.SuspendLayout();
             this.RA2OptionsTab.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.trbrDetailLevelRA2)).BeginInit();
@@ -399,6 +401,7 @@
             // 
             // RA2HotkeyTab
             // 
+            this.RA2HotkeyTab.Controls.Add(this.butResetToDefaultHotkeysRA2);
             this.RA2HotkeyTab.Controls.Add(this.HotkeyEditorDataGridRA2);
             this.RA2HotkeyTab.Cursor = System.Windows.Forms.Cursors.Default;
             this.RA2HotkeyTab.Font = new System.Drawing.Font("Comic Sans MS", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -420,58 +423,41 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.HotkeyEditorDataGridRA2.BackgroundColor = System.Drawing.SystemColors.ButtonFace;
             this.HotkeyEditorDataGridRA2.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle7.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle7.Font = new System.Drawing.Font("Comic Sans MS", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle7.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.Color.Red;
-            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.HotkeyEditorDataGridRA2.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle7;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Comic Sans MS", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.Red;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.HotkeyEditorDataGridRA2.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.HotkeyEditorDataGridRA2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.HotkeyEditorDataGridRA2.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Function,
             this.AssignedKey});
             this.HotkeyEditorDataGridRA2.Cursor = System.Windows.Forms.Cursors.Hand;
-            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle8.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle8.Font = new System.Drawing.Font("Comic Sans MS", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle8.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.Color.Red;
-            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.HotkeyEditorDataGridRA2.DefaultCellStyle = dataGridViewCellStyle8;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Comic Sans MS", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.Red;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.HotkeyEditorDataGridRA2.DefaultCellStyle = dataGridViewCellStyle2;
             this.HotkeyEditorDataGridRA2.EditMode = System.Windows.Forms.DataGridViewEditMode.EditOnKeystroke;
-            this.HotkeyEditorDataGridRA2.Location = new System.Drawing.Point(6, 6);
+            this.HotkeyEditorDataGridRA2.Location = new System.Drawing.Point(0, 0);
             this.HotkeyEditorDataGridRA2.MultiSelect = false;
             this.HotkeyEditorDataGridRA2.Name = "HotkeyEditorDataGridRA2";
             this.HotkeyEditorDataGridRA2.RowHeadersVisible = false;
-            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopLeft;
-            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.HotkeyEditorDataGridRA2.RowsDefaultCellStyle = dataGridViewCellStyle9;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopLeft;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.HotkeyEditorDataGridRA2.RowsDefaultCellStyle = dataGridViewCellStyle3;
             this.HotkeyEditorDataGridRA2.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.HotkeyEditorDataGridRA2.Size = new System.Drawing.Size(613, 310);
+            this.HotkeyEditorDataGridRA2.Size = new System.Drawing.Size(456, 322);
             this.HotkeyEditorDataGridRA2.TabIndex = 1;
             this.HotkeyEditorDataGridRA2.KeyDown += new System.Windows.Forms.KeyEventHandler(this.HotkeyEditorDataGridRA2_KeyDown);
             this.HotkeyEditorDataGridRA2.KeyUp += new System.Windows.Forms.KeyEventHandler(this.HotkeyEditorDataGridRA2_KeyUp);
             this.HotkeyEditorDataGridRA2.MouseEnter += new System.EventHandler(this.HotkeyEditorDataGridRA2_MouseEnter);
-            // 
-            // Function
-            // 
-            this.Function.Frozen = true;
-            this.Function.HeaderText = "Function";
-            this.Function.Name = "Function";
-            this.Function.ReadOnly = true;
-            this.Function.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            this.Function.Width = 400;
-            // 
-            // AssignedKey
-            // 
-            this.AssignedKey.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.AssignedKey.HeaderText = "Assigned Key";
-            this.AssignedKey.Name = "AssignedKey";
-            this.AssignedKey.ReadOnly = true;
-            this.AssignedKey.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             // 
             // YROptionsTab
             // 
@@ -637,6 +623,7 @@
             // 
             // YRHotkeysTab
             // 
+            this.YRHotkeysTab.Controls.Add(this.ButResetToDefaultHotkeysYR);
             this.YRHotkeysTab.Controls.Add(this.HotkeyEditorDataGridYR);
             this.YRHotkeysTab.Location = new System.Drawing.Point(4, 35);
             this.YRHotkeysTab.Name = "YRHotkeysTab";
@@ -656,62 +643,41 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.HotkeyEditorDataGridYR.BackgroundColor = System.Drawing.SystemColors.ButtonFace;
             this.HotkeyEditorDataGridYR.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle10.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle10.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle10.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle10.SelectionBackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle10.SelectionForeColor = System.Drawing.Color.Red;
-            dataGridViewCellStyle10.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.HotkeyEditorDataGridYR.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle10;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.Red;
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.HotkeyEditorDataGridYR.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle4;
             this.HotkeyEditorDataGridYR.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.HotkeyEditorDataGridYR.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.dataGridViewTextBoxColumn1,
             this.dataGridViewTextBoxColumn2});
             this.HotkeyEditorDataGridYR.Cursor = System.Windows.Forms.Cursors.Hand;
-            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle11.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle11.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle11.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle11.SelectionBackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle11.SelectionForeColor = System.Drawing.Color.Red;
-            dataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.HotkeyEditorDataGridYR.DefaultCellStyle = dataGridViewCellStyle11;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle5.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle5.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.Color.Red;
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.HotkeyEditorDataGridYR.DefaultCellStyle = dataGridViewCellStyle5;
             this.HotkeyEditorDataGridYR.EditMode = System.Windows.Forms.DataGridViewEditMode.EditOnKeystroke;
             this.HotkeyEditorDataGridYR.Location = new System.Drawing.Point(0, 0);
             this.HotkeyEditorDataGridYR.MultiSelect = false;
             this.HotkeyEditorDataGridYR.Name = "HotkeyEditorDataGridYR";
             this.HotkeyEditorDataGridYR.RowHeadersVisible = false;
-            dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopLeft;
-            dataGridViewCellStyle12.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.HotkeyEditorDataGridYR.RowsDefaultCellStyle = dataGridViewCellStyle12;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopLeft;
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.HotkeyEditorDataGridYR.RowsDefaultCellStyle = dataGridViewCellStyle6;
             this.HotkeyEditorDataGridYR.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.HotkeyEditorDataGridYR.Size = new System.Drawing.Size(456, 322);
             this.HotkeyEditorDataGridYR.TabIndex = 2;
             this.HotkeyEditorDataGridYR.KeyDown += new System.Windows.Forms.KeyEventHandler(this.HotkeyEditorDataGridYR_KeyDown);
             this.HotkeyEditorDataGridYR.KeyUp += new System.Windows.Forms.KeyEventHandler(this.HotkeyEditorDataGridYR_KeyUp);
             this.HotkeyEditorDataGridYR.MouseEnter += new System.EventHandler(this.HotkeyEditorDataGridYR_MouseEnter);
-            // 
-            // dataGridViewTextBoxColumn1
-            // 
-            this.dataGridViewTextBoxColumn1.Frozen = true;
-            this.dataGridViewTextBoxColumn1.HeaderText = "Function";
-            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
-            this.dataGridViewTextBoxColumn1.ReadOnly = true;
-            this.dataGridViewTextBoxColumn1.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridViewTextBoxColumn1.Width = 250;
-            // 
-            // dataGridViewTextBoxColumn2
-            // 
-            this.dataGridViewTextBoxColumn2.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
-            this.dataGridViewTextBoxColumn2.FillWeight = 600F;
-            this.dataGridViewTextBoxColumn2.Frozen = true;
-            this.dataGridViewTextBoxColumn2.HeaderText = "Assigned Key";
-            this.dataGridViewTextBoxColumn2.MinimumWidth = 600;
-            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
-            this.dataGridViewTextBoxColumn2.ReadOnly = true;
-            this.dataGridViewTextBoxColumn2.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridViewTextBoxColumn2.Width = 600;
             // 
             // OkButton
             // 
@@ -771,6 +737,66 @@
             this.ApplyButton.UseVisualStyleBackColor = true;
             this.ApplyButton.Click += new System.EventHandler(this.ApplyButton_Click);
             // 
+            // ButResetToDefaultHotkeysYR
+            // 
+            this.ButResetToDefaultHotkeysYR.Location = new System.Drawing.Point(464, 69);
+            this.ButResetToDefaultHotkeysYR.Name = "ButResetToDefaultHotkeysYR";
+            this.ButResetToDefaultHotkeysYR.Size = new System.Drawing.Size(144, 31);
+            this.ButResetToDefaultHotkeysYR.TabIndex = 3;
+            this.ButResetToDefaultHotkeysYR.Text = "Reset to defaults";
+            this.ButResetToDefaultHotkeysYR.UseVisualStyleBackColor = true;
+            this.ButResetToDefaultHotkeysYR.Click += new System.EventHandler(this.ButResetToDefaultHotkeysYR_Click);
+            // 
+            // butResetToDefaultHotkeysRA2
+            // 
+            this.butResetToDefaultHotkeysRA2.Location = new System.Drawing.Point(464, 69);
+            this.butResetToDefaultHotkeysRA2.Name = "butResetToDefaultHotkeysRA2";
+            this.butResetToDefaultHotkeysRA2.Size = new System.Drawing.Size(144, 31);
+            this.butResetToDefaultHotkeysRA2.TabIndex = 4;
+            this.butResetToDefaultHotkeysRA2.Text = "Reset to defaults";
+            this.butResetToDefaultHotkeysRA2.UseVisualStyleBackColor = true;
+            this.butResetToDefaultHotkeysRA2.Click += new System.EventHandler(this.butResetToDefaultHotkeysRA2_Click);
+            // 
+            // dataGridViewTextBoxColumn1
+            // 
+            this.dataGridViewTextBoxColumn1.Frozen = true;
+            this.dataGridViewTextBoxColumn1.HeaderText = "Function";
+            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
+            this.dataGridViewTextBoxColumn1.ReadOnly = true;
+            this.dataGridViewTextBoxColumn1.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridViewTextBoxColumn1.Width = 250;
+            // 
+            // dataGridViewTextBoxColumn2
+            // 
+            this.dataGridViewTextBoxColumn2.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
+            this.dataGridViewTextBoxColumn2.FillWeight = 600F;
+            this.dataGridViewTextBoxColumn2.Frozen = true;
+            this.dataGridViewTextBoxColumn2.HeaderText = "Assigned Key";
+            this.dataGridViewTextBoxColumn2.MinimumWidth = 600;
+            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
+            this.dataGridViewTextBoxColumn2.ReadOnly = true;
+            this.dataGridViewTextBoxColumn2.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridViewTextBoxColumn2.Width = 600;
+            // 
+            // Function
+            // 
+            this.Function.Frozen = true;
+            this.Function.HeaderText = "Function";
+            this.Function.Name = "Function";
+            this.Function.ReadOnly = true;
+            this.Function.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.Function.Width = 250;
+            // 
+            // AssignedKey
+            // 
+            this.AssignedKey.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.AssignedKey.FillWeight = 600F;
+            this.AssignedKey.HeaderText = "Assigned Key";
+            this.AssignedKey.MinimumWidth = 600;
+            this.AssignedKey.Name = "AssignedKey";
+            this.AssignedKey.ReadOnly = true;
+            this.AssignedKey.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -815,8 +841,6 @@
         private System.Windows.Forms.DataGridView HotkeyEditorDataGridRA2;
         private System.Windows.Forms.Button OkButton;
         private System.Windows.Forms.Button CancelButton;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Function;
-        private System.Windows.Forms.DataGridViewTextBoxColumn AssignedKey;
         private System.Windows.Forms.Button ResetButton;
         private System.Windows.Forms.Button ApplyButton;
         private System.Windows.Forms.TabPage YROptionsTab;
@@ -843,8 +867,6 @@
         private System.Windows.Forms.CheckBox chbShowToolTipsRA2;
         private System.Windows.Forms.Label lblAudioVolumeRA2;
         private System.Windows.Forms.TrackBar trbrAudioVolumeRA2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
         private System.Windows.Forms.CheckBox chbShuffleMusicRA2;
         private System.Windows.Forms.CheckBox chbRepeatMusicRA2;
         private System.Windows.Forms.CheckBox chbUseGraphicsPatchRA2;
@@ -857,6 +879,12 @@
         private System.Windows.Forms.TrackBar trbrDetailLevelRA2;
         private System.Windows.Forms.CheckBox chbVideoBackBufferRA2;
         private System.Windows.Forms.CheckBox chbAllowVRAMSidebarRA2;
+        private System.Windows.Forms.Button ButResetToDefaultHotkeysYR;
+        private System.Windows.Forms.Button butResetToDefaultHotkeysRA2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Function;
+        private System.Windows.Forms.DataGridViewTextBoxColumn AssignedKey;
     }
 }
 

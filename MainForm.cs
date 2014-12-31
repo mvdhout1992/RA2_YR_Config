@@ -242,5 +242,17 @@ namespace RA2_YR_Config
             dgv.CurrentCell.Value = ghks.Hotkey_Display_Value(dgv.CurrentCell.RowIndex);
         }
 
+        private void ButResetToDefaultHotkeysYR_Click(object sender, EventArgs e)
+        {
+            IniFile OrigKeyboardMDINI = new IniFile("", Properties.Resources.keyboardmdini);
+            Load_Hotkey_Editor(HotkeyEditorDataGridYR, GameHotkeysYR, OrigKeyboardMDINI);
+        }
+
+        private void butResetToDefaultHotkeysRA2_Click(object sender, EventArgs e)
+        {
+            IniFile OrigKeyboardINI = new IniFile("", Properties.Resources.keyboardini);
+            Load_Hotkey_Editor(HotkeyEditorDataGridRA2, GameHotkeysRA2, OrigKeyboardINI);
+        }
+
     }
 }

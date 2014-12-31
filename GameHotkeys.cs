@@ -18,6 +18,8 @@ namespace RA2_YR_Config
         // returns how many hotkeys were loaded
         public int Load_Hotkeys(IniFile inifile)
         {
+            LoadedHotkeys.Clear();
+
             var hotkeys = inifile.GetSectionKeys("Hotkey");
             if (hotkeys != null)
             {
