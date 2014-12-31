@@ -83,53 +83,171 @@ namespace RA2_YR_Config.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized resource of type System.Byte[].
+        ///   Looks up a localized string similar to [Hotkey]
+        ///CenterView=12
+        ///Options=27
+        ///CenterOnRadarEvent=32
+        ///RightSidebarUp=33
+        ///RightSidebarDown=34
+        ///LeftSidebarDown=35
+        ///LeftSidebarUp=36
+        ///Delete=46
+        ///TeamSelect_10=48
+        ///TeamSelect_1=49
+        ///TeamSelect_2=50
+        ///TeamSelect_3=51
+        ///TeamSelect_4=52
+        ///TeamSelect_5=53
+        ///TeamSelect_6=54
+        ///TeamSelect_7=55
+        ///TeamSelect_8=56
+        ///TeamSelect_9=57
+        ///ToggleAlliance=65
+        ///PlaceBeacon=66
+        ///AllToCheer=67
+        ///DeployObject=68
+        ///InfantryTab=69
+        ///Follow=70
+        ///GuardObject=71
+        ///CenterBase=72
+        ///ToggleRepair=75
+        ///ToggleSell=76
+        ///NextObject=78
+        ///CombatantSelect=80
+        /// [rest of string was truncated]&quot;;.
         /// </summary>
-        internal static byte[] ddwrapper {
+        internal static string keyboardini {
             get {
-                object obj = ResourceManager.GetObject("ddwrapper", resourceCulture);
-                return ((byte[])(obj));
+                return ResourceManager.GetString("keyboardini", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to [Hotkey]
+        ///CenterView=12
+        ///Options=27
+        ///CenterOnRadarEvent=32
+        ///RightSidebarUp=33
+        ///RightSidebarDown=34
+        ///LeftSidebarDown=35
+        ///LeftSidebarUp=36
+        ///TeamSelect_10=48
+        ///TeamSelect_1=49
+        ///TeamSelect_2=50
+        ///TeamSelect_3=51
+        ///TeamSelect_4=52
+        ///TeamSelect_5=53
+        ///TeamSelect_6=54
+        ///TeamSelect_7=55
+        ///TeamSelect_8=56
+        ///TeamSelect_9=57
+        ///ToggleAlliance=65
+        ///PlaceBeacon=66
+        ///AllToCheer=67
+        ///DeployObject=68
+        ///InfantryTab=69
+        ///Follow=70
+        ///GuardObject=71
+        ///CenterBase=72
+        ///ToggleRepair=75
+        ///ToggleSell=76
+        ///PreviousObject=77
+        ///NextObject=78
+        ///CombatantSel [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string keyboardmdini {
+            get {
+                return ResourceManager.GetString("keyboardmdini", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to [MultiPlayer]
-        ///UnitCount=10
-        ///TechLevel=7
-        ///StartingCredits=7000
-        ///AIPlayers=0
-        ///Crates=No
-        ///Worms=0
-        ///PlayerName=NONAME
-        ///PlayerSide=0
-        ///PlayerColor=0
-        ///PlayerHandicap=0
-        ///IPAddress=
-        ///ModemPhone=
-        ///SerialComPort=1
+        ///PreferredGameTypeID=1
+        ///PreferredScenarioIndex=0
+        ///Locale=0
+        ///StoreNick=yes
+        ///PhoneIndex=-1
+        ///WOLLimitResolution=no
+        ///LastNickSlot=-1
+        ///Color=2
+        ///ColorEx=-1
+        ///Side=Americans
+        ///SideEx=-1
+        ///GameMode=1
+        ///
+        ///[Multiplayer]
+        ///GameMode=1
+        ///
         ///[Options]
-        ///FirstTimePlay=Yes
-        ///ScrollRate=20
-        ///GameSpeed=75
-        ///GameBitsPerPixel=16
-        ///SFXVolume=100
-        ///MusicVolume=100
-        ///MoviesEnabled=Yes
-        ///SoundsEnabled=Yes
-        ///VideoBackBuffer=Yes
-        ///ForceNoCD=Yes
-        ///GameWidth=640
-        ///GameHeight=400
-        ///SlowSideBarScrolling=No
-        ///[WOL]
-        ///AllowFindUser=Yes
-        ///AllowPageUser=Yes
-        ///LanguageFilter=No
-        ///S [rest of string was truncated]&quot;;.
+        ///GameSpeed=1
+        ///Difficulty=0
+        ///ScrollMethod=0
+        ///ScrollRate=3
+        ///AutoScroll=yes
+        ///DetailLevel=2
+        ///SidebarCameoText=yes
+        ///UnitActionLines=yes
+        ///ShowHidden=yes
+        ///ToolTips=yes
+        ///
+        ///[Video]
+        ///ScreenWidth=800
+        ///ScreenHeight=600
+        ///StretchMovies=no
+        ///
+        ///[Audio]
+        ///SoundVolume=0.700000
+        ///VoiceVol [rest of string was truncated]&quot;;.
         /// </summary>
-        internal static string dune2000 {
+        internal static string ra2ini {
             get {
-                return ResourceManager.GetString("dune2000", resourceCulture);
+                return ResourceManager.GetString("ra2ini", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to [MultiPlayer]
+        ///PreferredGameTypeID=1
+        ///PreferredScenarioIndex=0
+        ///Locale=0
+        ///StoreNick=yes
+        ///PhoneIndex=-1
+        ///WOLLimitResolution=no
+        ///LastNickSlot=-1
+        ///Color=2
+        ///ColorEx=-1
+        ///Side=Americans
+        ///SideEx=-1
+        ///GameMode=1
+        ///
+        ///[Multiplayer]
+        ///GameMode=1
+        ///
+        ///[Options]
+        ///GameSpeed=1
+        ///Difficulty=0
+        ///ScrollMethod=0
+        ///ScrollRate=3
+        ///AutoScroll=yes
+        ///DetailLevel=2
+        ///SidebarCameoText=yes
+        ///UnitActionLines=yes
+        ///ShowHidden=yes
+        ///ToolTips=yes
+        ///
+        ///[Video]
+        ///ScreenWidth=800
+        ///ScreenHeight=600
+        ///StretchMovies=no
+        ///
+        ///[Audio]
+        ///SoundVolume=0.700000
+        ///VoiceVol [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string ra2mdini {
+            get {
+                return ResourceManager.GetString("ra2mdini", resourceCulture);
             }
         }
     }

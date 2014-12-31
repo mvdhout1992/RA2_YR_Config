@@ -18,7 +18,7 @@ namespace RA2_YR_Config
         string Extracting = "Extracting";
         string BadChecksumError = "Bad Checksum... Please restart the Launcher to retry the Update. {0}";
 
-        string ClientVersionTxt = "Dune2000Update.txt";
+        string ClientVersionTxt = "RA2_YR_Config_Update.txt";
         string[] UpdateMirrors = new string[] { "http://iran.cnc-comm.com/ra/update/" };
         List<DownloadQueueStruct> DownloadQueue = new List<DownloadQueueStruct>();
         Stopwatch FileDownloadStopwatch = new Stopwatch();

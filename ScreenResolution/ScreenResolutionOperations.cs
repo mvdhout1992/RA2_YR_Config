@@ -141,8 +141,7 @@ namespace screenres
                     })
                         == -1; // check if index is -1 (meaning item is not found in list)
 
-                if (devmode.dmBitsPerPel == colordepth
-                    && devmode.dmPelsWidth >= minWidth
+                if (devmode.dmPelsWidth >= minWidth
                     && devmode.dmPelsHeight >= minHeight
                     && notInList)
                 {

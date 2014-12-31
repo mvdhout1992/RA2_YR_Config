@@ -54,8 +54,10 @@ namespace RA2_YR_Config
                 return;
             }
 
+#if !DEBUG
+            if (Updater.ExecutableWasUpdated()) return;
             if (!skipUpdateParamExists && Updater.GetUpdates()) return;
-
+#endif
             Application.Run(new MainForm());
         }
 
