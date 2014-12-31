@@ -47,7 +47,7 @@ namespace RA2_YR_Config
 
         private void OkButton_Click(object sender, EventArgs e)
         {
-            SaveSettings();
+            Save_Settings();
             Application.Exit();
         }
 
@@ -63,13 +63,12 @@ namespace RA2_YR_Config
 
         private void ApplyButton_Click(object sender, EventArgs e)
         {
-            SaveSettings();
+            Save_Settings();
         }
 
         private void Load_Settings()
         {
             Load_Settings_INI_Files();
-            //### dune2000.ini ###
             ResolutionComboBox.Items.Clear();
 
             Load_Resolutions(cmbResolutionRA2, RA2INI);
@@ -78,9 +77,11 @@ namespace RA2_YR_Config
 
             try
             {
-                trbrScrollRateRA2.Value = RA2INI.GetIntValue("Options", "ScrollRate", 20);
-                trbtrAudioVolumeRA2.Value = RA2INI.GetIntValue("Options", "SFXVolume", 100);
-                trbrMusicVolumeRA2.Value = RA2INI.GetIntValue("Options", "MusicVolume", 100);
+                trbrScrollRateRA2.Value = RA2INI.GetIntValue("Options", "ScrollRate", 1);
+
+                trbrVoiceVolumeRA2.Value = Convert.ToInt32( RA2INI.GetFloatValue("Audio", "VoiceVolume", 0.3) * 20 );
+                trbrAudioVolumeRA2.Value = Convert.ToInt32( RA2INI.GetFloatValue("Audio", "SoundVolume", 0.3) * 20 );
+                trbrMusicVolumeRA2.Value = Convert.ToInt32( RA2INI.GetFloatValue("Audio", "ScoreVolume", 0.3) * 20 );
             }
             catch
             {
@@ -117,31 +118,36 @@ namespace RA2_YR_Config
             }
         }
 
-        private void SaveSettings()
+        private void Save_Settings()
         {
-            //### dune2000.ini ###
             GameHotkeysRA2.Save_Hotkeys(KeyboardINI);
             GameHotkeysYR.Save_Hotkeys(KeyboardMDINI);
 
+            RA2INI.SetFloatValue("Audio", "VoiceVolume", ((double)trbrVoiceVolumeRA2.Value / 20));
+            RA2INI.SetFloatValue("Audio", "SoundVolume", ((double)trbrAudioVolumeRA2.Value / 20));
+            RA2INI.SetFloatValue("Audio", "ScoreVolume", ((double)trbrMusicVolumeRA2.Value / 20));
+
             RA2INI.SetIntValue("Options", "ScrollRate", trbrScrollRateRA2.Value);
-            RA2INI.SetIntValue("Options", "SFXVolume", trbtrAudioVolumeRA2.Value);
-            RA2INI.SetIntValue("Options", "MusicVolume", trbrMusicVolumeRA2.Value);
-            RA2INI.SetBoolValue("Options", "MoviesEnabled", chbShowToolTipsRA2.Checked);
-            RA2INI.SetBoolValue("Options", "SoundsEnabled", chbShowTargetLinesRA2.Checked);
-            RA2INI.SetBoolValue("Options", "VideoBackBuffer", VideoBackBufferCheckBox.Checked);
-            RA2INI.SetBoolValue("Options", "ForceNoCD", chbEnableNoCDRA2.Checked);
-            RA2INI.SetBoolValue("Options", "SlowSideBarScrolling", chbShowHiddenObjectsRA2.Checked);
-            RA2INI.SetStringValue("Options", "GameBitsPerPixel", (string)BitsPerPixelComboBox.SelectedItem);
+            RA2INI.SetIntValue("Options", "DetailLevel", trbrDetailLevelRA2.Value);
 
             var res = cmbResolutionRA2.SelectedItem.ToString().Split('x');
-            RA2INI.SetStringValue("Options", "GameWidth", res[0]);
-            RA2INI.SetStringValue("Options", "GameHeight", res[1]);
+            RA2INI.SetStringValue("Video", "GameWidth", res[0]);
+            RA2INI.SetStringValue("Video", "GameHeight", res[1]);
+
+            RA2INI.SetBoolValue("Video", "AllowVRAMSidebar", chbAllowVRAMSidebarRA2.Checked);
+            RA2INI.SetBoolValue("Video", "VideoBackBuffer", chbVideoBackBufferRA2.Checked);
+
+            RA2INI.SetBoolValue("Options", "ToolTips", chbShowToolTipsRA2.Checked);
+            RA2INI.SetBoolValue("Options", "UnitActionLines", chbShowTargetLinesRA2.Checked);
+
+            RA2INI.SetBoolValue("Options", "NoCD", chbEnableNoCDRA2.Checked);
+            RA2INI.SetBoolValue("Options", "ShowHidden", chbShowHiddenObjectsRA2.Checked);
+            RA2INI.SetBoolValue("Video", "Windowed", chbWindowedModeRA2.Checked);
+            RA2INI.SetBoolValue("Video", "UseGraphicsPatch", chbUseGraphicsPatchRA2.Checked);
+            RA2INI.SetBoolValue("Audio", "IsScoreRepeat", chbRepeatMusicRA2.Checked);
+            RA2INI.SetBoolValue("Audio", "IsScoreShuffle", chbShuffleMusicRA2.Checked);
 
             RA2INI.WriteIni();
-
-
-            RA2MDINI.WriteIni();
-
         }
 
         private void HotkeyEditorDataGridRA2_KeyDown(object sender, KeyEventArgs e)

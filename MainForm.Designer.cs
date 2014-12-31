@@ -28,21 +28,21 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.RA2OptionsTab = new System.Windows.Forms.TabPage();
             this.lblDetailLevelRA2 = new System.Windows.Forms.Label();
-            this.trackBar1 = new System.Windows.Forms.TrackBar();
+            this.trbrDetailLevelRA2 = new System.Windows.Forms.TrackBar();
             this.chbVideoBackBufferRA2 = new System.Windows.Forms.CheckBox();
             this.chbAllowVRAMSidebarRA2 = new System.Windows.Forms.CheckBox();
-            this.trbrVoiceVolume = new System.Windows.Forms.TrackBar();
+            this.trbrVoiceVolumeRA2 = new System.Windows.Forms.TrackBar();
             this.lblVoiceVolumeRA2 = new System.Windows.Forms.Label();
-            this.chbShuffleMusic = new System.Windows.Forms.CheckBox();
+            this.chbShuffleMusicRA2 = new System.Windows.Forms.CheckBox();
             this.chbRepeatMusicRA2 = new System.Windows.Forms.CheckBox();
             this.chbUseGraphicsPatchRA2 = new System.Windows.Forms.CheckBox();
             this.chbWindowedModeRA2 = new System.Windows.Forms.CheckBox();
@@ -57,7 +57,7 @@
             this.lblMusicVolumeRA2 = new System.Windows.Forms.Label();
             this.chbShowToolTipsRA2 = new System.Windows.Forms.CheckBox();
             this.lblAudioVolumeRA2 = new System.Windows.Forms.Label();
-            this.trbtrAudioVolumeRA2 = new System.Windows.Forms.TrackBar();
+            this.trbrAudioVolumeRA2 = new System.Windows.Forms.TrackBar();
             this.RA2HotkeyTab = new System.Windows.Forms.TabPage();
             this.HotkeyEditorDataGridRA2 = new System.Windows.Forms.DataGridView();
             this.Function = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -84,11 +84,11 @@
             this.ApplyButton = new System.Windows.Forms.Button();
             this.tabControl1.SuspendLayout();
             this.RA2OptionsTab.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.trackBar1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.trbrVoiceVolume)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.trbrDetailLevelRA2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.trbrVoiceVolumeRA2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.trbrScrollRateRA2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.trbrMusicVolumeRA2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.trbtrAudioVolumeRA2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.trbrAudioVolumeRA2)).BeginInit();
             this.RA2HotkeyTab.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.HotkeyEditorDataGridRA2)).BeginInit();
             this.YROptionsTab.SuspendLayout();
@@ -118,12 +118,12 @@
             // RA2OptionsTab
             // 
             this.RA2OptionsTab.Controls.Add(this.lblDetailLevelRA2);
-            this.RA2OptionsTab.Controls.Add(this.trackBar1);
+            this.RA2OptionsTab.Controls.Add(this.trbrDetailLevelRA2);
             this.RA2OptionsTab.Controls.Add(this.chbVideoBackBufferRA2);
             this.RA2OptionsTab.Controls.Add(this.chbAllowVRAMSidebarRA2);
-            this.RA2OptionsTab.Controls.Add(this.trbrVoiceVolume);
+            this.RA2OptionsTab.Controls.Add(this.trbrVoiceVolumeRA2);
             this.RA2OptionsTab.Controls.Add(this.lblVoiceVolumeRA2);
-            this.RA2OptionsTab.Controls.Add(this.chbShuffleMusic);
+            this.RA2OptionsTab.Controls.Add(this.chbShuffleMusicRA2);
             this.RA2OptionsTab.Controls.Add(this.chbRepeatMusicRA2);
             this.RA2OptionsTab.Controls.Add(this.chbUseGraphicsPatchRA2);
             this.RA2OptionsTab.Controls.Add(this.chbWindowedModeRA2);
@@ -138,7 +138,7 @@
             this.RA2OptionsTab.Controls.Add(this.lblMusicVolumeRA2);
             this.RA2OptionsTab.Controls.Add(this.chbShowToolTipsRA2);
             this.RA2OptionsTab.Controls.Add(this.lblAudioVolumeRA2);
-            this.RA2OptionsTab.Controls.Add(this.trbtrAudioVolumeRA2);
+            this.RA2OptionsTab.Controls.Add(this.trbrAudioVolumeRA2);
             this.RA2OptionsTab.Cursor = System.Windows.Forms.Cursors.Default;
             this.RA2OptionsTab.Font = new System.Drawing.Font("Comic Sans MS", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.RA2OptionsTab.Location = new System.Drawing.Point(4, 35);
@@ -158,16 +158,16 @@
             this.lblDetailLevelRA2.TabIndex = 34;
             this.lblDetailLevelRA2.Text = "Detail level";
             // 
-            // trackBar1
+            // trbrDetailLevelRA2
             // 
-            this.trackBar1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.trackBar1.Location = new System.Drawing.Point(95, 113);
-            this.trackBar1.Maximum = 2;
-            this.trackBar1.Name = "trackBar1";
-            this.trackBar1.Size = new System.Drawing.Size(100, 45);
-            this.trackBar1.TabIndex = 33;
-            this.trackBar1.TickStyle = System.Windows.Forms.TickStyle.None;
-            this.trackBar1.Value = 2;
+            this.trbrDetailLevelRA2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.trbrDetailLevelRA2.Location = new System.Drawing.Point(95, 113);
+            this.trbrDetailLevelRA2.Maximum = 2;
+            this.trbrDetailLevelRA2.Name = "trbrDetailLevelRA2";
+            this.trbrDetailLevelRA2.Size = new System.Drawing.Size(100, 45);
+            this.trbrDetailLevelRA2.TabIndex = 33;
+            this.trbrDetailLevelRA2.TickStyle = System.Windows.Forms.TickStyle.None;
+            this.trbrDetailLevelRA2.Value = 2;
             // 
             // chbVideoBackBufferRA2
             // 
@@ -191,16 +191,16 @@
             this.chbAllowVRAMSidebarRA2.Text = "Allow VRAM sidebar";
             this.chbAllowVRAMSidebarRA2.UseVisualStyleBackColor = true;
             // 
-            // trbrVoiceVolume
+            // trbrVoiceVolumeRA2
             // 
-            this.trbrVoiceVolume.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.trbrVoiceVolume.Location = new System.Drawing.Point(92, 277);
-            this.trbrVoiceVolume.Maximum = 100;
-            this.trbrVoiceVolume.Name = "trbrVoiceVolume";
-            this.trbrVoiceVolume.Size = new System.Drawing.Size(100, 45);
-            this.trbrVoiceVolume.TabIndex = 30;
-            this.trbrVoiceVolume.TickStyle = System.Windows.Forms.TickStyle.None;
-            this.trbrVoiceVolume.Value = 100;
+            this.trbrVoiceVolumeRA2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.trbrVoiceVolumeRA2.Location = new System.Drawing.Point(92, 277);
+            this.trbrVoiceVolumeRA2.Maximum = 20;
+            this.trbrVoiceVolumeRA2.Name = "trbrVoiceVolumeRA2";
+            this.trbrVoiceVolumeRA2.Size = new System.Drawing.Size(100, 45);
+            this.trbrVoiceVolumeRA2.TabIndex = 30;
+            this.trbrVoiceVolumeRA2.TickStyle = System.Windows.Forms.TickStyle.None;
+            this.trbrVoiceVolumeRA2.Value = 20;
             // 
             // lblVoiceVolumeRA2
             // 
@@ -211,16 +211,16 @@
             this.lblVoiceVolumeRA2.TabIndex = 29;
             this.lblVoiceVolumeRA2.Text = "Voice Volume";
             // 
-            // chbShuffleMusic
+            // chbShuffleMusicRA2
             // 
-            this.chbShuffleMusic.AutoSize = true;
-            this.chbShuffleMusic.Location = new System.Drawing.Point(424, 260);
-            this.chbShuffleMusic.Name = "chbShuffleMusic";
-            this.chbShuffleMusic.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.chbShuffleMusic.Size = new System.Drawing.Size(116, 22);
-            this.chbShuffleMusic.TabIndex = 28;
-            this.chbShuffleMusic.Text = " Shuffle music";
-            this.chbShuffleMusic.UseVisualStyleBackColor = true;
+            this.chbShuffleMusicRA2.AutoSize = true;
+            this.chbShuffleMusicRA2.Location = new System.Drawing.Point(424, 260);
+            this.chbShuffleMusicRA2.Name = "chbShuffleMusicRA2";
+            this.chbShuffleMusicRA2.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.chbShuffleMusicRA2.Size = new System.Drawing.Size(116, 22);
+            this.chbShuffleMusicRA2.TabIndex = 28;
+            this.chbShuffleMusicRA2.Text = " Shuffle music";
+            this.chbShuffleMusicRA2.UseVisualStyleBackColor = true;
             // 
             // chbRepeatMusicRA2
             // 
@@ -336,8 +336,7 @@
             // 
             this.trbrScrollRateRA2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.trbrScrollRateRA2.Location = new System.Drawing.Point(92, 165);
-            this.trbrScrollRateRA2.Maximum = 40;
-            this.trbrScrollRateRA2.Minimum = 4;
+            this.trbrScrollRateRA2.Maximum = 6;
             this.trbrScrollRateRA2.Name = "trbrScrollRateRA2";
             this.trbrScrollRateRA2.Size = new System.Drawing.Size(100, 45);
             this.trbrScrollRateRA2.TabIndex = 2;
@@ -348,12 +347,12 @@
             // 
             this.trbrMusicVolumeRA2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.trbrMusicVolumeRA2.Location = new System.Drawing.Point(92, 248);
-            this.trbrMusicVolumeRA2.Maximum = 100;
+            this.trbrMusicVolumeRA2.Maximum = 20;
             this.trbrMusicVolumeRA2.Name = "trbrMusicVolumeRA2";
             this.trbrMusicVolumeRA2.Size = new System.Drawing.Size(100, 45);
             this.trbrMusicVolumeRA2.TabIndex = 6;
             this.trbrMusicVolumeRA2.TickStyle = System.Windows.Forms.TickStyle.None;
-            this.trbrMusicVolumeRA2.Value = 100;
+            this.trbrMusicVolumeRA2.Value = 20;
             // 
             // lblMusicVolumeRA2
             // 
@@ -387,16 +386,16 @@
             this.lblAudioVolumeRA2.TabIndex = 5;
             this.lblAudioVolumeRA2.Text = "Audio Volume";
             // 
-            // trbtrAudioVolumeRA2
+            // trbrAudioVolumeRA2
             // 
-            this.trbtrAudioVolumeRA2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.trbtrAudioVolumeRA2.Location = new System.Drawing.Point(92, 204);
-            this.trbtrAudioVolumeRA2.Maximum = 100;
-            this.trbtrAudioVolumeRA2.Name = "trbtrAudioVolumeRA2";
-            this.trbtrAudioVolumeRA2.Size = new System.Drawing.Size(100, 45);
-            this.trbtrAudioVolumeRA2.TabIndex = 4;
-            this.trbtrAudioVolumeRA2.TickStyle = System.Windows.Forms.TickStyle.None;
-            this.trbtrAudioVolumeRA2.Value = 100;
+            this.trbrAudioVolumeRA2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.trbrAudioVolumeRA2.Location = new System.Drawing.Point(92, 204);
+            this.trbrAudioVolumeRA2.Maximum = 20;
+            this.trbrAudioVolumeRA2.Name = "trbrAudioVolumeRA2";
+            this.trbrAudioVolumeRA2.Size = new System.Drawing.Size(100, 45);
+            this.trbrAudioVolumeRA2.TabIndex = 4;
+            this.trbrAudioVolumeRA2.TickStyle = System.Windows.Forms.TickStyle.None;
+            this.trbrAudioVolumeRA2.Value = 20;
             // 
             // RA2HotkeyTab
             // 
@@ -421,35 +420,35 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.HotkeyEditorDataGridRA2.BackgroundColor = System.Drawing.SystemColors.ButtonFace;
             this.HotkeyEditorDataGridRA2.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Comic Sans MS", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.Red;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.HotkeyEditorDataGridRA2.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle7.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle7.Font = new System.Drawing.Font("Comic Sans MS", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle7.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.Color.Red;
+            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.HotkeyEditorDataGridRA2.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle7;
             this.HotkeyEditorDataGridRA2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.HotkeyEditorDataGridRA2.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Function,
             this.AssignedKey});
             this.HotkeyEditorDataGridRA2.Cursor = System.Windows.Forms.Cursors.Hand;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Comic Sans MS", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.Red;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.HotkeyEditorDataGridRA2.DefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle8.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle8.Font = new System.Drawing.Font("Comic Sans MS", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle8.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.Color.Red;
+            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.HotkeyEditorDataGridRA2.DefaultCellStyle = dataGridViewCellStyle8;
             this.HotkeyEditorDataGridRA2.EditMode = System.Windows.Forms.DataGridViewEditMode.EditOnKeystroke;
             this.HotkeyEditorDataGridRA2.Location = new System.Drawing.Point(6, 6);
             this.HotkeyEditorDataGridRA2.MultiSelect = false;
             this.HotkeyEditorDataGridRA2.Name = "HotkeyEditorDataGridRA2";
             this.HotkeyEditorDataGridRA2.RowHeadersVisible = false;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopLeft;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.HotkeyEditorDataGridRA2.RowsDefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopLeft;
+            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.HotkeyEditorDataGridRA2.RowsDefaultCellStyle = dataGridViewCellStyle9;
             this.HotkeyEditorDataGridRA2.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.HotkeyEditorDataGridRA2.Size = new System.Drawing.Size(613, 310);
             this.HotkeyEditorDataGridRA2.TabIndex = 1;
@@ -657,35 +656,35 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.HotkeyEditorDataGridYR.BackgroundColor = System.Drawing.SystemColors.ButtonFace;
             this.HotkeyEditorDataGridYR.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.Red;
-            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.HotkeyEditorDataGridYR.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle10.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle10.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle10.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle10.SelectionBackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle10.SelectionForeColor = System.Drawing.Color.Red;
+            dataGridViewCellStyle10.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.HotkeyEditorDataGridYR.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle10;
             this.HotkeyEditorDataGridYR.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.HotkeyEditorDataGridYR.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.dataGridViewTextBoxColumn1,
             this.dataGridViewTextBoxColumn2});
             this.HotkeyEditorDataGridYR.Cursor = System.Windows.Forms.Cursors.Hand;
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle5.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle5.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.Color.Red;
-            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.HotkeyEditorDataGridYR.DefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle11.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle11.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle11.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle11.SelectionBackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle11.SelectionForeColor = System.Drawing.Color.Red;
+            dataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.HotkeyEditorDataGridYR.DefaultCellStyle = dataGridViewCellStyle11;
             this.HotkeyEditorDataGridYR.EditMode = System.Windows.Forms.DataGridViewEditMode.EditOnKeystroke;
             this.HotkeyEditorDataGridYR.Location = new System.Drawing.Point(0, 0);
             this.HotkeyEditorDataGridYR.MultiSelect = false;
             this.HotkeyEditorDataGridYR.Name = "HotkeyEditorDataGridYR";
             this.HotkeyEditorDataGridYR.RowHeadersVisible = false;
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopLeft;
-            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.HotkeyEditorDataGridYR.RowsDefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopLeft;
+            dataGridViewCellStyle12.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.HotkeyEditorDataGridYR.RowsDefaultCellStyle = dataGridViewCellStyle12;
             this.HotkeyEditorDataGridYR.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.HotkeyEditorDataGridYR.Size = new System.Drawing.Size(456, 322);
             this.HotkeyEditorDataGridYR.TabIndex = 2;
@@ -792,11 +791,11 @@
             this.tabControl1.ResumeLayout(false);
             this.RA2OptionsTab.ResumeLayout(false);
             this.RA2OptionsTab.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.trackBar1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.trbrVoiceVolume)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.trbrDetailLevelRA2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.trbrVoiceVolumeRA2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.trbrScrollRateRA2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.trbrMusicVolumeRA2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.trbtrAudioVolumeRA2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.trbrAudioVolumeRA2)).EndInit();
             this.RA2HotkeyTab.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.HotkeyEditorDataGridRA2)).EndInit();
             this.YROptionsTab.ResumeLayout(false);
@@ -843,19 +842,19 @@
         private System.Windows.Forms.Label lblMusicVolumeRA2;
         private System.Windows.Forms.CheckBox chbShowToolTipsRA2;
         private System.Windows.Forms.Label lblAudioVolumeRA2;
-        private System.Windows.Forms.TrackBar trbtrAudioVolumeRA2;
+        private System.Windows.Forms.TrackBar trbrAudioVolumeRA2;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
-        private System.Windows.Forms.CheckBox chbShuffleMusic;
+        private System.Windows.Forms.CheckBox chbShuffleMusicRA2;
         private System.Windows.Forms.CheckBox chbRepeatMusicRA2;
         private System.Windows.Forms.CheckBox chbUseGraphicsPatchRA2;
         private System.Windows.Forms.CheckBox chbWindowedModeRA2;
         private System.Windows.Forms.Label lblScreenResolutionRA2;
         private System.Windows.Forms.ComboBox cmbResolutionRA2;
-        private System.Windows.Forms.TrackBar trbrVoiceVolume;
+        private System.Windows.Forms.TrackBar trbrVoiceVolumeRA2;
         private System.Windows.Forms.Label lblVoiceVolumeRA2;
         private System.Windows.Forms.Label lblDetailLevelRA2;
-        private System.Windows.Forms.TrackBar trackBar1;
+        private System.Windows.Forms.TrackBar trbrDetailLevelRA2;
         private System.Windows.Forms.CheckBox chbVideoBackBufferRA2;
         private System.Windows.Forms.CheckBox chbAllowVRAMSidebarRA2;
     }
