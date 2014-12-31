@@ -78,6 +78,7 @@ namespace RA2_YR_Config
             try
             {
                 trbrScrollRateRA2.Value = RA2INI.GetIntValue("Options", "ScrollRate", 1);
+                trbrDetailLevelRA2.Value= RA2INI.GetIntValue("Options", "DetailLevel", 2);
 
                 trbrVoiceVolumeRA2.Value = Convert.ToInt32( RA2INI.GetFloatValue("Audio", "VoiceVolume", 0.3) * 20 );
                 trbrAudioVolumeRA2.Value = Convert.ToInt32( RA2INI.GetFloatValue("Audio", "SoundVolume", 0.3) * 20 );
@@ -86,12 +87,19 @@ namespace RA2_YR_Config
             catch
             {
             }
-            chbShowToolTipsRA2.Checked = RA2INI.GetBoolValue("Options", "MoviesEnabled", true);
-            chbShowTargetLinesRA2.Checked = RA2INI.GetBoolValue("Options", "SoundsEnabled", true);
-            VideoBackBufferCheckBox.Checked = RA2INI.GetBoolValue("Options", "VideoBackBuffer", true);
-            chbEnableNoCDRA2.Checked = RA2INI.GetBoolValue("Options", "ForceNoCD", true);
-            chbShowHiddenObjectsRA2.Checked = RA2INI.GetBoolValue("Options", "SlowSideBarScrolling", false);
 
+            chbAllowVRAMSidebarRA2.Checked = RA2INI.GetBoolValue("Video", "AllowVRAMSidebar", false);
+            chbVideoBackBufferRA2.Checked = RA2INI.GetBoolValue("Video", "VideoBackBuffer", true);
+
+            chbShowToolTipsRA2.Checked = RA2INI.GetBoolValue("Options", "ToolTips", true);
+            chbShowTargetLinesRA2.Checked = RA2INI.GetBoolValue("Options", "UnitActionLines", true);
+
+            chbEnableNoCDRA2.Checked = RA2INI.GetBoolValue("Options", "NoCD", true);
+            chbShowHiddenObjectsRA2.Checked = RA2INI.GetBoolValue("Options", "ShowHidden", true);
+            chbWindowedModeRA2.Checked = RA2INI.GetBoolValue("Video", "Windowed", false);
+            chbUseGraphicsPatchRA2.Checked = RA2INI.GetBoolValue("Video", "UseGraphicsPatch", true);
+            chbRepeatMusicRA2.Checked = RA2INI.GetBoolValue("Audio", "IsScoreRepeat", true);
+            chbShuffleMusicRA2.Checked = RA2INI.GetBoolValue("Audio", "IsScoreShuffle", true);
         }
 
         private void Load_Resolutions(ComboBox cmbox, IniFile Inifile)
@@ -131,8 +139,8 @@ namespace RA2_YR_Config
             RA2INI.SetIntValue("Options", "DetailLevel", trbrDetailLevelRA2.Value);
 
             var res = cmbResolutionRA2.SelectedItem.ToString().Split('x');
-            RA2INI.SetStringValue("Video", "GameWidth", res[0]);
-            RA2INI.SetStringValue("Video", "GameHeight", res[1]);
+            RA2INI.SetStringValue("Video", "ScreenWidth", res[0]);
+            RA2INI.SetStringValue("Video", "ScreenHeight", res[1]);
 
             RA2INI.SetBoolValue("Video", "AllowVRAMSidebar", chbAllowVRAMSidebarRA2.Checked);
             RA2INI.SetBoolValue("Video", "VideoBackBuffer", chbVideoBackBufferRA2.Checked);
