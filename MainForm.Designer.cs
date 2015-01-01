@@ -84,6 +84,7 @@
             this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Function = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.AssignedKey = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ClientOptionsTab = new System.Windows.Forms.TabPage();
             this.tabControl1.SuspendLayout();
             this.RA2OptionsTab.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.trbrDetailLevelRA2)).BeginInit();
@@ -105,6 +106,7 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.tabControl1.Appearance = System.Windows.Forms.TabAppearance.FlatButtons;
+            this.tabControl1.Controls.Add(this.ClientOptionsTab);
             this.tabControl1.Controls.Add(this.RA2OptionsTab);
             this.tabControl1.Controls.Add(this.RA2HotkeyTab);
             this.tabControl1.Controls.Add(this.YROptionsTab);
@@ -410,7 +412,7 @@
             this.RA2HotkeyTab.Padding = new System.Windows.Forms.Padding(3);
             this.RA2HotkeyTab.Size = new System.Drawing.Size(625, 322);
             this.RA2HotkeyTab.TabIndex = 1;
-            this.RA2HotkeyTab.Text = "RA2 Hotkeys";
+            this.RA2HotkeyTab.Text = "RA2 hotkeys";
             this.RA2HotkeyTab.UseVisualStyleBackColor = true;
             // 
             // HotkeyEditorDataGridRA2
@@ -797,6 +799,15 @@
             this.AssignedKey.ReadOnly = true;
             this.AssignedKey.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             // 
+            // ClientOptionsTab
+            // 
+            this.ClientOptionsTab.Location = new System.Drawing.Point(4, 35);
+            this.ClientOptionsTab.Name = "ClientOptionsTab";
+            this.ClientOptionsTab.Size = new System.Drawing.Size(625, 322);
+            this.ClientOptionsTab.TabIndex = 4;
+            this.ClientOptionsTab.Text = "Client options";
+            this.ClientOptionsTab.UseVisualStyleBackColor = true;
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -885,6 +896,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
         private System.Windows.Forms.DataGridViewTextBoxColumn Function;
         private System.Windows.Forms.DataGridViewTextBoxColumn AssignedKey;
+        private System.Windows.Forms.TabPage ClientOptionsTab;
     }
 }
 
